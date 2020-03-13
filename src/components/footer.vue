@@ -1,16 +1,14 @@
 <template>
-  <div class="mt-5">
+  <div class="mt-5" >
+    <div v-for="link in links" :key="link.id">
     <div style="padding-top:3rem " class="footer">
       <div class="first-row">
         <div class="d-flex justify-content-lg-center justify-content-md-center">
           <strong>
             <ul class="nav navbar-nav d-inline-flex">
-              <li class="nav-item">
+              <li class="nav-item" >
                 <ul class="list-inline-mb-0">
-                  <li class="list-inline-item p-2">imprint</li>
-                  <li class="list-inline-item p-2">Conditions</li>
-                  <li class="list-inline-item p-2">privacy</li>
-                  <li class="list-inline-item" style="margin-left:20px">Cookies & Tracking</li>
+                  <li class="list-inline-item p-2" v-for="list in link.items" :key="list.id">{{list.item}}</li>
                 </ul>
               </li>
             </ul>
@@ -21,14 +19,8 @@
             <ul class="nav navbar-nav d-inline-flex">
               <li class="nav-item">
                 <ul class="list-inline-mb-0 list_item">
-                  <li class="list-inline-item p-2" style="font-weight:bold">Deals:</li>
-                  <li class="list-inline-item p-2">SUBSCRIPTION</li>
-                  <li class="list-inline-item p-2">Vouchers</li>
-                  <li class="list-inline-item p-2">Shop</li>
-                  <li class="list-inline-item p-2">Christ & World</li>
-                  <li class="list-inline-item p-2">Tme travel</li>
-                  <li class="list-inline-item p-2">Time for the school</li>
-                  <li class="list-inline-item p-2">TIME events</li>
+                  <li class="list-inline-item p-2" style="font-weight:bold">{{link.text}}</li>
+                  <li class="list-inline-item p-2" v-for="list in link.items_two" :key="list.id">{{list.item}}</li>
                 </ul>
               </li>
             </ul>
@@ -40,14 +32,8 @@
             <ul class="nav navbar-nav d-inline-flex">
               <li class="nav-item">
                 <ul class="list-inline-mb-0 list_items">
-                  <li class="list-inline-item p-2" style="font-weight:bold">Publishing company:</li>
-                  <li class="list-inline-item p-2">advertise</li>
-                  <li class="list-inline-item p-2">Media data</li>
-                  <li class="list-inline-item p-2">press</li>
-                  <li class="list-inline-item p-2">Comanies</li>
-                  <li class="list-inline-item p-2">Tme travel</li>
-                  <li class="list-inline-item p-2">Rights & Licenses</li>
-                  <li class="list-inline-item p-2">Karriere</li>
+                  <li class="list-inline-item p-2" style="font-weight:bold">{{link.texts}}</li>
+                  <li class="list-inline-item p-2" v-for="list in link.items_three" :key="list.id">{{list.item}}</li>
                 </ul>
               </li>
             </ul>
@@ -60,10 +46,7 @@
             <ul class="nav navbar-nav d-inline-flex">
               <li class="nav-item">
                 <ul class="list-inline-mb-0">
-                  <li class="list-inline-item p-2">image rights</li>
-                  <li class="list-inline-item p-2">Help/Contact</li>
-                  <li class="list-inline-item p-2">Newsletter</li>
-                  <li class="list-inline-item p-2">RSS</li>
+                  <li class="list-inline-item p-2" v-for="list in link.items_four" :key="list.id">{{list.item}}</li>
                 </ul>
               </li>
             </ul>
@@ -82,10 +65,7 @@
             <ul class="nav navbar-nav d-inline-flex">
               <li class="nav-item">
                 <ul class="list-inline-mb-0">
-                  <li class="list-inline-item p-2">imprint</li>
-                  <li class="list-inline-item p-2">Conditions</li>
-                  <li class="list-inline-item p-2">privacy</li>
-                  <li class="list-inline-item p-2">Cookies & Tracking</li>
+                  <li class="list-inline-item p-2" v-for="list in link.items_five" :key="list.id">{{list.item}}</li>
                 </ul>
               </li>
             </ul>
@@ -103,12 +83,12 @@
             aria-controls="collapseExample"
           >
             More
-            <i class="material-icons">arrow_drop_down</i>
+            <i class="fas fa-caret-down"></i>
           </p>
         </div>
       </div>
 
-      <div class="drop" style="background-color:#383838;">
+      <div class="drop mt-n5" style="background-color:#383838;">
         <div class="wrap collapse" id="collapseExample" style="margin-top:-59px">
           <div class="row" style="background-color:#383838; color:white">
             <div class="col-6">
@@ -116,14 +96,8 @@
                 <ul class="nav navbar-nav">
                   <li class="nav-item">
                     <ul class="list-inline-mb-0">
-                      <li class="list-inline-item p-2" style="font-weight:bold">Deals:</li>
-                      <li class="list-inline-item p-2 pt-4">SUBSCRIPTION</li>
-                      <li class="list-inline-item p-2">Vouchers</li>
-                      <li class="list-inline-item p-2">Shop</li>
-                      <li class="list-inline-item p-2">Christ & World</li>
-                      <li class="list-inline-item p-2">Tme travel</li>
-                      <li class="list-inline-item p-2">Time for the school</li>
-                      <li class="list-inline-item p-2">TIME events</li>
+                      <li class="list-inline-item p-2" style="font-weight:bold">{{link.text}}:</li>
+                      <li class="list-inline-item p-2 pt-4" v-for="list in link.items_two" :key="list.id">{{list.item}}</li>
                     </ul>
                   </li>
                 </ul>
@@ -155,10 +129,7 @@
                 <ul class="nav navbar-nav">
                   <li class="nav-item">
                     <ul class="list-inline-mb-0">
-                      <li class="list-inline-item p-2">image rights</li>
-                      <li class="list-inline-item p-2">Help/Contact</li>
-                      <li class="list-inline-item p-2">Newsletter</li>
-                      <li class="list-inline-item p-2">RSS</li>
+                      <li class="list-inline-item p-2" v-for="list in link.items_four" :key="list.id">{{list.item}}</li>
                     </ul>
                   </li>
                 </ul>
@@ -167,7 +138,7 @@
           </div>
         </div>
 
-        <div class="p-0" style="background-color:#383838; margin-top:-25px; height:150px
+        <div class="p-0" style="background-color:#383838; margin-top:-10px; height:150px
         ">
           <hr class=" line" />
           <div class="d-flex justify-content-center">
@@ -177,7 +148,164 @@
       </div>
     </div>
   </div>
+  </div>
 </template>
+<script>
+/* eslint-disable no-console */
+export default {
+  data() {
+    return {
+      links:[
+        {
+           items:[
+             {
+               id:1,
+               item:'imprint'
+
+             },
+             {
+               id:2,
+               item:'Conditions'
+
+             },
+             {
+               id:3,
+               item:'privacy'
+
+             },
+             {
+               id:4,
+               item:'Cookies & Tracking'
+
+             },
+           ],
+           text : 'Deals:',
+           items_two:[
+             {
+               id:1,
+               item:'SUBSCRIPTION'
+
+             },
+             {
+               id:2,
+               item:'Vouchers'
+
+             },
+             {
+               id:3,
+               item:'Shop'
+
+             },
+             {
+               id:4,
+               item:'Christ & World'
+
+             },
+             {
+               id:5,
+               item:'Time travel'
+
+             },
+             {
+               id:6,
+               item:'Time for the school'
+
+             },
+             {
+               id:7,
+               item:'TIME events'
+
+             },
+           ],
+           texts : 'Publishing company:',
+           items_three:[
+             {
+               id:1,
+               item:'Advertise'
+
+             },
+             {
+               id:2,
+               item:'Media data'
+
+             },
+             {
+               id:3,
+               item:'Press'
+
+             },
+             {
+               id:4,
+               item:'Companies'
+
+             },
+             {
+               id:5,
+               item:'Rights & Licenses'
+
+             },
+             {
+               id:6,
+               item:'Career'
+
+             },
+             
+           ],
+            items_four:[
+             {
+               id:1,
+               item:'image rights'
+
+             },
+             {
+               id:2,
+               item:'Help/Contact'
+
+             },
+             {
+               id:3,
+               item:'Newsletter'
+
+             },
+             {
+               id:4,
+               item:'RSS'
+
+             },
+            ],
+            items_five:[
+             {
+               id:1,
+               item:'imprint'
+
+             },
+             {
+               id:2,
+               item:'Conditions'
+
+             },
+             {
+               id:3,
+               item:'privacy'
+
+             },
+             {
+               id:4,
+               item:'Cookies & Tracking'
+
+             },
+            ],
+        }       
+      ]
+    };
+  },
+  methods: {
+    backtoTop() {
+      window.scrollTo(0, 0);
+    }
+  }
+};
+</script>
 <style  scoped>
 .first-row {
   background-color: #eeeef0;
@@ -235,17 +363,3 @@
   border-top: 1px solid white;
 }
 </style>
-
-<script>
-/* eslint-disable no-console */
-export default {
-  data() {
-    return {};
-  },
-  methods: {
-    backtoTop() {
-      window.scrollTo(0, 0);
-    }
-  }
-};
-</script>

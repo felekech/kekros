@@ -2,7 +2,7 @@
   <div>
     <b-navbar toggleable="md" text-variant="dark" variant="white">
           <b-navbar-toggle target="nav-collapse d-xs-inline-block d-md-none">
-        <img src="../assets/zeit-online-logo.png" width="220px" />
+        <img :src="img_src" width="220px" />
       </b-navbar-toggle>  
       <b-navbar-toggle
         class="btn btn-outline-light border-0"
@@ -21,7 +21,7 @@
         <b-navbar-nav class="mr-auto p-0 d-none d-md-block">
           <b-navbar-brand class="navbar-brand-collapse-5 pr-5rem ml-lg-3 ml-md-3 mt-lg-3" href="#">
             <router-link to="/index">
-            <img src="../assets/zeit-online-logo.png" />
+            <img :src="img_src" />
             </router-link>
           </b-navbar-brand>       
         </b-navbar-nav>
@@ -47,11 +47,9 @@
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="w-100">
           <ul class="list pt-0 list2 w-100 ml-lg-n5 mt-md-n3 ml-md-n5 sos">
-            <router-link to=""> 
               <li class="pl-lg-3 pl-md-2 ">
-              <a href="#">Politics</a>
+              <a href="#">{{link}}</a>
             </li>
-            </router-link>
             <hr class="hor-zontal" />
           </ul>
         </b-navbar-nav>
@@ -280,6 +278,9 @@ export default {
   data: () => {
     return {
       type: "",
+      img_src: require('../assets/zeit-online-logo.png'),
+      link:'Politics'
+
 
     };
   },

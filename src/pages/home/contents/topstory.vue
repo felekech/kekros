@@ -1,14 +1,15 @@
 <template>
   <div class="box mx-lg-5 mx-md-3">
+  <span>{{boxTitle}}</span>
   <div class="row">
   <div class="col-lg-11">
   <div class="topic mt-lg-5 mb-lg-5">
   <div class>
   <font>
-  <p class="h1 top_key">Virus</p>
+  <p class="h1 top_key">{{about}}</p>
   </font>
   <font>
-  <h1 class="header">What you should Know about the pathogen</h1>
+  <h1 class="header">{{header}}</h1>
   </font>
   </div>
   </div>
@@ -38,7 +39,8 @@
   <hr width="95%">
   <div class="d-flex justify-content-center">
   <p class="link">
-  <a href="#">More about Covid19
+  <a href="#">
+    {{link}}
           <i class="fa fa-arrow-right"></i>
         </a>
       </p>
@@ -49,6 +51,10 @@
 export default {
   data() {
     return {
+      boxTitle:'CORONA',
+      about:'Virus',
+      header:'What you should Know about the pathogen',
+      link:'More about Covid19',
       stories: [
         {
           id: 1,
@@ -86,6 +92,22 @@ export default {
 };
 </script>
 <style scoped>
+span {
+  display: flex;
+  flex-direction: row;
+}
+span:before,span:after{
+  content: "";
+  flex: 1 1;
+  border-top: 0.5rem solid rgb(240, 238, 238);
+  
+}
+span:before {
+  margin-right: 10px
+}
+span:after {
+  margin-left: 10px
+}
 .link a {
   color: black;
 }
@@ -142,6 +164,5 @@ export default {
   border-left: 0.5rem solid rgb(240, 238, 238);
   border-right: 0.5rem solid rgb(240, 238, 238);
   border-bottom: 0.5rem solid rgb(240, 238, 238);
-  border-top: 0.5rem solid rgb(240, 238, 238);
 }
 </style>
