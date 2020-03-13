@@ -83,7 +83,7 @@
             aria-controls="collapseExample"
           >
             More
-            <i class="fas fa-caret-down"></i>
+           <i class="fa fa-angle-down" aria-hidden="true"></i>
           </p>
         </div>
       </div>
@@ -110,12 +110,6 @@
                     <ul class="list-inline-mb-0">
                       <li class="list-inline-item p-2" style="font-weight:bold">{{link.texts}}:</li>
                       <li class="list-inline-item p-2" v-for="list in link.items_three" :key="list.id">{{list.item}}</li>
-                      <!-- <li class="list-inline-item p-2">Media data</li>
-                      <li class="list-inline-item p-2">press</li>
-                      <li class="list-inline-item p-2">Comanies</li>
-                      <li class="list-inline-item p-2">Tme travel</li>
-                      <li class="list-inline-item p-2">Rights & Licenses</li>
-                      <li class="list-inline-item p-2"></li> -->
                     </ul>
                   </li>
                 </ul>
