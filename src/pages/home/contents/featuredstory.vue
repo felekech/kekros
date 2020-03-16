@@ -5,7 +5,7 @@
         <img :src="cardimagesrc" width="100%" height="100%" />
       </div>
       <div>
-        <div class="card shadow p-md-3 mb-5 bg-white rounded mx-md-4 position-relative home-card">
+        <div class="card shadow p-md-3 mb-5  mx-md-4 position-relative home-card">
           <div>
             <div class="ml-lg-5 mx-md-4 story" v-for=" story in story" :key="story.id">
               <font class="co-slug">{{story.top_story_slugline}}</font>
@@ -28,7 +28,7 @@
                 <div class="card">
                   <img :src="story.src" alt width="auto" />
                 </div>
-                <div class="mt-md-3 mx-lg-4 ">
+                <div class="mt-md-3 de-abstracts">
                   <font class="de-slug">{{story.key_title}}</font>
                   <font>
                     <h3 class="de-header">{{story.headline}}</h3>
@@ -112,80 +112,5 @@ export default {
 };
 </script>
 
-<style  scoped>
-.border-style {
-  background-color: #dfdfe1;
-}
-.all-text {
-  font-family: "TabletGothic", "Helvetica Neue", Helvetica, Arial, FreeSans,
-    sans-serif;
-}
-.home-card {
-  margin-top: -3.5rem;
-  border: 1px solid white;
-}
-.co-slug {
-  font-size: 1.2rem;
-  color: #b91109;
-}
-.co-header {
-  font-size: 2rem;
-  font-weight: bolder;
-}
-.co-abstract {
-  color: #44444c;
-  font-size: 1.18rem;
-}
-.co-byline {
-  font-size: 1.01rem;
-  color: #69696c;
-}
-.de-slug {
-  color: #b91109;
-}
-.de-header {
-  font-weight: bolder;
-  font-size: 1.6rem;
-  color: #252525;
-}
-.de-abstract {
-  font-size: 1.1rem;
-  color: #69696c;
-}
-.de-byline {
-  font-size: 1rem;
-  color: #69696c;
-}
-a {
-  color: #69696c;
-  font-size: 1.1rem;
-}
-a:hover {
-  color: brown;
-}
-@media (max-width: 540px) {
-  .home-card {
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-    margin-top: -1.1rem;
-  }
-  .story {
-    padding-left: 1rem;
-  }
-}
-@media (max-width: 768px) {
-  .co-abstract {
-    font-size: 1rem;
-  }
-
-  .de-header {
-    font-size: 1rem;
-  }
-  .de-abstract {
-    font-size: 0.76rem;
-  }
-  .de-byline {
-    font-size: 0.74rem;
-  }
-}
+<style src='../../../assets/css/featuredstory.css' scoped>
 </style>

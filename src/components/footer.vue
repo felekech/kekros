@@ -58,7 +58,7 @@
       </div>
     </div>
     <!-- ******************************************************************** -->
-    <div class="row justify-content-sm-center foot2 ">
+    <div class="row justify-content-sm-center foot2 mx-1 ">
       <div class="toper" style>
         <div class="d-flex justify-content-center pl-4 mr-0">
           <strong>
@@ -90,7 +90,7 @@
 
       <div class="drop mt-n5" style="background-color:#383838;">
         <div class="wrap collapse" id="collapseExample" style="margin-top:-59px">
-          <div class="row" style="background-color:#383838; color:white">
+          <div class="row mx-1" style="background-color:#383838; color:white">
             <div class="col-6">
               <div>
                 <ul class="nav navbar-nav">
@@ -117,7 +117,7 @@
             </div>
           </div>
           <hr class=" line" />
-          <div class="row col-6" style="background-color:#383838; color:white">
+          <div class="row col-6 mx-1" style="background-color:#383838; color:white">
             <div class="d-flex justify-content-center">
               <strong>
                 <ul class="nav navbar-nav">
@@ -300,60 +300,6 @@ export default {
   }
 };
 </script>
-<style  scoped>
-.first-row {
-  background-color: #eeeef0;
-  height: 170px;
-}
-.foo-foo {
-  background-color: #1f1d1d;
-  color: gainsboro;
-  height: 250px;
-  padding-top: 20px;
-}
-.btn {
-  margin-top: 20px;
-  background-color: #1f1d1d;
-}
-.btn:hover {
-  color: white;
-}
-@media (max-width: 767px) {
-  .footer {
-    display: none;
-  }
+<style src='../assets/css/footer.css' scoped>
 
-}
-@media (max-width: 768px){
-  .list_item{
-    font-size: 0.7rem;
-    margin-top:1rem;
-    margin-bottom: 1.3rem;
-  }
-  .list_items{
-    font-size: 0.7rem;
-  }
-}
-@media (max-width: 767px) {
-  .foot2 {
-    display: block;
-  }
-}
-@media (min-width: 767px) {
-  .foot2 {
-    display: none;
-  }
-}
-.toper {
-  background-color: #eeeef0;
-  height: 196px;
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
-  left: 0px;
-  right: 0px;
-}
-.line {
-  border-top: 1px solid white;
-}
 </style>
