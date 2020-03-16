@@ -53,7 +53,7 @@
           </strong>
         </div>
         <div class="d-flex justify-content-center btn">
-          <button type="button" class="btn btn-outline-light" @click="backtoTop">UP</button>
+          <button type="button" class="btn btn-outline-light" @click="backtoTop">{{button}}</button>
         </div>
       </div>
     </div>
@@ -136,7 +136,7 @@
         ">
           <hr class=" line" />
           <div class="d-flex justify-content-center">
-            <button type="button" class="btn btn-outline-light" @click="backtoTop">UP</button>
+            <button type="button" class="btn btn-outline-light" @click="backtoTop">{{button}}</button>
           </div>
         </div>
       </div>
@@ -149,6 +149,7 @@
 export default {
   data() {
     return {
+      
       links:[
         {
            items:[
@@ -290,8 +291,10 @@ export default {
              },
             ],
         }       
-      ]
+      ],
+       button:'UP',
     };
+   
   },
   methods: {
     backtoTop() {
