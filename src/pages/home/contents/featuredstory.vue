@@ -1,14 +1,15 @@
 <template>
+<!-- This page is Home page top featured news component -->
   <div class="all-text">
     <div class="border-style">
+      <!-- Big card image with full container width -->
       <div class="big-img">
         <img :src="cardimagesrc" width="100%" height="100%" />
       </div>
       <div>
-        <div class="card shadow p-md-3 mb-5  mx-md-4 position-relative home-card">
-          
+        <div class="card shadow p-md-3 mb-5  mx-md-4 position-relative home-card"> 
           <div>
-            
+            <!-- key word,header and abstract of the first story -->
             <div class="ml-lg-5 mx-md-4 story" v-for=" story in story" :key="story.id">
               <router-link to="/detail" class="decor">
               <font class="co-slug">{{story.top_story_slugline}}</font>
@@ -29,6 +30,7 @@
           </div>
           
           <div class="row mt-3 mx-lg-4">
+            <!-- Two small components side by side and its detail -->
             <div class="col-lg-6 col-md-6 col-sm-12" v-for="story in storys" :key="story.id">
               <div>
                 <div class="card">
@@ -56,6 +58,7 @@
 export default {
   data() {
     return {
+      // storing all the data here that going to be bind with its corresponding view
       storys: [
         {
           id: 1,
@@ -122,4 +125,5 @@ export default {
 </script>
 
 <style src='../../../assets/css/featuredstory.css' scoped>
+/* import the css from asset in to this page and it works only for this page only since it is scoped */
 </style>

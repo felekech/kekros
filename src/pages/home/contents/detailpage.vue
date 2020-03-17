@@ -1,9 +1,13 @@
 <template>
-  <div class="all">
+<!-- Detail page when the headlineor keyword or the abstract  of the home page related story clicked it goes in to this page -->
+  <div>
     <div>
-      <app-navbar></app-navbar>
+      <!-- the navgation bar is called here -->
+      <app-navbar></app-navbar> 
     </div>
+
     <div v-for=" detail in  details" :key=" detail.id">
+      <!--story detail contents like the header, image, abstract, produced by...  -->
     <div class="row">
       <div class="col-lg-7 col-md-7 text">
         <font>
@@ -58,11 +62,13 @@
     </div>
     </div>
     <div>
+      <!-- the footer is called here also -->
       <app-footer></app-footer>
     </div>
   </div>
 </template>
 <script>
+// import the navbar and the footer
 import navbar from "../../../components/navbar";
 import footer from "../../../components/footer";
 export default {
@@ -73,6 +79,7 @@ export default {
       data(){
         return{
           details:[
+            // all stored data that is bind in the view
             {
               id:1,
               image_src: 'https://img.zeit.de/politik/ausland/2020-03/syrien-wladimir-putin-russland-baschar-al-assad/wide__820x461__desktop',
