@@ -8,6 +8,7 @@
         <div class="card shadow p-md-3 mb-5  mx-md-4 position-relative home-card">
           
           <div>
+            
             <div class="ml-lg-5 mx-md-4 story" v-for=" story in story" :key="story.id">
               <router-link to="/detail" class="decor">
               <font class="co-slug">{{story.top_story_slugline}}</font>
@@ -24,6 +25,7 @@
               </div>
               </router-link>
             </div>
+            
           </div>
           
           <div class="row mt-3 mx-lg-4">
@@ -88,7 +90,8 @@ export default {
           top_story_headline: "under our eyes",
           top_story_abstract:
             "Nobody can say that it is a shock that Putins military is committing war crimes. He is responsible for the crimes in Syria. And the Europeans are accomplices.",
-          top_story_byline: "A commentary by Alice Bota"
+          top_story_byline: "A commentary by Alice Bota",
+         
         }
       ],
       stories: [
@@ -119,7 +122,4 @@ export default {
 </script>
 
 <style src='../../../assets/css/featuredstory.css' scoped>
-.decor:hover{
-  text-decoration: none;
-}
 </style>

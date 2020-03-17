@@ -1,3 +1,13 @@
+
+.decor{
+  text-decoration: unset;
+}
+.co-header{
+  color: black;
+}
+.co-header:hover{
+  color: black;
+}
 .home-card {
   border-radius: 0
 }
