@@ -82,9 +82,8 @@ export default {
             "https://img.zeit.de/politik/ausland/2020-03/adonis-georgiadis-griechenland-asylpolitik-eu-aussengrenze-bild/wide__350x197__desktop",
           keyword: "Adonis Georgiadis",
           headline: '"No one will get through to Greece through Greece"',
-          abstract:
-            "The policy of closed borders is working, says the Greek minister Adonis Georgiadis. If you have no right to asylum, you want to hold on for life.",
-          byline: "    Interview: Zacharias Zacharakis ."
+          abstract: "The policy of closed borders is working, says the Greek minister Adonis Georgiadis. If you have no right to asylum, you want to hold on for life.",
+          byline: " Interview: Zacharias Zacharakis ."
         }
       ]
     };

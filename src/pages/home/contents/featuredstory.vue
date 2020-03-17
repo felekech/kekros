@@ -6,8 +6,10 @@
       </div>
       <div>
         <div class="card shadow p-md-3 mb-5  mx-md-4 position-relative home-card">
+          
           <div>
             <div class="ml-lg-5 mx-md-4 story" v-for=" story in story" :key="story.id">
+              <router-link to="/detail" class="decor">
               <font class="co-slug">{{story.top_story_slugline}}</font>
               <font>
                 <h2 class="co-header">{{story.top_story_headline}}</h2>
@@ -20,8 +22,10 @@
               <div class="mt-2">
                 <font class="co-byline">{{story.top_story_byline}}</font>
               </div>
+              </router-link>
             </div>
           </div>
+          
           <div class="row mt-3 mx-lg-4">
             <div class="col-lg-6 col-md-6 col-sm-12" v-for="story in storys" :key="story.id">
               <div>
@@ -59,7 +63,8 @@ export default {
           headline: "The Russian President can congratulate himself",
           abstract:
             "Turkish President Recep Tayyip Erdoğan provokes the EU with the opening of the border and bombs in Syria. Another one benefits from the escalation: Vladimir Putin.",
-          byline: "By Özlem Topçu and Michael Thumann"
+          byline: "By Özlem Topçu and Michael Thumann",
+          
         },
         {
           id: 2,
@@ -70,7 +75,8 @@ export default {
             "Greece expels migrants - Turkey sends 1,000 police officers",
           abstract:
             "The Athens government recently sent illegally migrants back to their countries of origin. The Turkish police are strengthening their units on the Evros border river.",
-          byline: "By Özlem Topçu and Michael Thumann"
+          byline: "By Özlem Topçu and Michael Thumann",
+         
         }
       ],
       cardimagesrc:
@@ -113,4 +119,7 @@ export default {
 </script>
 
 <style src='../../../assets/css/featuredstory.css' scoped>
+.decor:hover{
+  text-decoration: none;
+}
 </style>

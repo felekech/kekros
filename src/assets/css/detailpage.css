@@ -1,0 +1,120 @@
+.caption{
+    color: #69696c;
+}
+.header {
+    color: black;
+  }
+  .detail {
+    font-family: "FranziskaWebPro", Georgia, Palatino, "Palatino Linotype",
+      FreeSerif, serif;
+    color: #69696c;
+  }
+  .abstract,
+  .text {
+    font-family: "TabletGothic", "Helvetica Neue", Helvetica, Arial, FreeSans,
+      sans-serif;
+  }
+  img {
+    width: 85%;
+    height: 100%;
+  }
+  .key_word {
+    color: brown;
+  }
+  @media (min-width: 1140px) {
+      .byline{
+          font-size: 1.4rem;
+      }
+   .caption{
+    margin-left: 13rem;
+      }
+    .text {
+      margin-left: 10rem;
+    }
+    img {
+      margin-left: 6rem;
+    }
+    .abstract {
+      font-size: 1.5rem;
+    }
+    .date {
+      font-size: 1.09rem;
+    }
+    .detail {
+      margin-left: 13rem;
+      font-size: 1.2rem;
+      word-spacing: 3px;
+    }
+    .header {
+      font-size: 1.4rem;
+    }
+  }
+  @media (max-width: 1024px) and (min-width: 766px) {
+    .caption{
+        margin-left:5rem;
+          }
+    img {
+      margin-left: 5rem;
+    }
+    .text {
+      margin-left: 8rem;
+    }
+    .detail {
+      margin-left: 9rem;
+    }
+    .header {
+      font-size: 1.4rem;
+    }
+    .abstract {
+      font-size: 1.4rem;
+    }
+    .date {
+      font-size: 0.98rem;
+    }
+  }
+  @media (max-width: 768px) and (min-width: 538px) {
+    .date {
+      font-size: 0.71rem;
+    }
+    .abstract {
+      font-size: 1rem;
+    }
+    .detail {
+      word-spacing: 1px;
+      margin-left: 5.8rem;
+    }
+    img {
+      margin-left: 3rem;
+    }
+    .header {
+      font-size: 1rem;
+    }
+  }
+  @media (max-width: 540px) {
+    .caption{
+        margin-left:0.7rem;
+          }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+   .detail{
+     margin:1.5rem;
+     font-size: 1.2rem;
+   } 
+   .text{
+     margin: 1.2rem;
+   }
+   .headline{
+     font-size: 1.8rem;
+   }
+   .abstract{
+     font-size: 1.05rem;
+   }
+   .header{
+     font-size: 1.1rem;
+   }
+   .date{
+     font-size: 0.96rem;
+   }
+  }
