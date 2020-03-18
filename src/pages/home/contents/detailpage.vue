@@ -7,7 +7,7 @@
     </div>
 
     <div v-for=" detail in  details" :key=" detail.id">
-      <!--story detail contents like the header, image, abstract, produced by...  -->
+      <!-- It is story detail contents like the header, image, abstract, byline all this  data is stored in the model binded here in the view ...  -->
     <div class="row">
       <div class="col-lg-7 col-md-7 text">
         <font>

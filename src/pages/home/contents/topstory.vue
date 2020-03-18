@@ -101,4 +101,5 @@ export default {
 };
 </script>
 <style src='../../../assets/css/topstory.css' scoped>
+/* It import the css here from the asset page */
 </style>
