@@ -1,43 +1,42 @@
 <template>
-<!-- This page is Home page top featured news component -->
   <div class="all-text">
-    <div class="border-style">
-      <!-- Big card image with full container width -->
-      <div class="big-img">
-        <img :src="cardimagesrc" width="100%" height="100%" />
-      </div>
-      <div>
-        <div class="card shadow p-md-3 mb-5  mx-md-4 position-relative home-card"> 
-          <div>
-            <!-- key word,header and abstract of the first story -->
-            <div class="ml-lg-5 mx-md-4 story" v-for=" story in story" :key="story.id">
-              <router-link to="/detail" class="decor">
-              <font class="co-slug">{{story.top_story_slugline}}</font>
-              <font>
-                <h2 class="co-header">{{story.top_story_headline}}</h2>
-              </font>
-              <div class="row">
-                <div class="col-xl-8 col-lg-9">
-                  <font class="co-abstract">{{story.top_story_abstract}}</font>
-                </div>
+    <div v-for="(story,index) in stories" :key="index">
+    <div class="border-style" >
+      <div @click="edit(index)">
+        <div class="big-img" v-html="story.body" v-if="index%3==0" >
+          <!-- <img :src="cardimagesrc" width="100%" height="100%" /> -->
+        </div>
+        <div>
+          <div class="card shadow p-md-3 mb-5 mx-md-4 position-relative home-card">
+            <div>
+              <div class="ml-lg-5 mx-md-4 story">
+                <!-- v-for=" story in story" :key="story.id" -->
+                <router-link to="/detail" class="decor">
+                  <font class="co-slug">{{story.slugline}}</font>
+                  <font>
+                    <h2 class="co-header">{{story.headline}}</h2>
+                  </font>
+                  <div class="row">
+                    <div class="col-xl-8 col-lg-9">
+                      <font class="co-abstract">{{story.abstract}}</font>
+                    </div>
+                  </div>
+                  <div class="mt-2">
+                    <!-- <font class="co-byline">{{story.top_story_byline}}</font> -->
+                  </div>
+                </router-link>
               </div>
-              <div class="mt-2">
-                <font class="co-byline">{{story.top_story_byline}}</font>
-              </div>
-              </router-link>
             </div>
-            
           </div>
-          
-          <div class="row mt-3 mx-lg-4">
-            <!-- Two small components side by side and its detail -->
-            <div class="col-lg-6 col-md-6 col-sm-12" v-for="story in storys" :key="story.id">
-              <div>
-                <div class="card">
+
+          <div class="row mt-3 mx-lg-4" >
+            <div  class="col-lg-6 col-md-6 col-sm-12" v-for="story in stories" :key="story.id">
+              <!-- <div>
+                <div class="card" v-html="story.body">
                   <img :src="story.src" alt width="auto" />
                 </div>
                 <div class="mt-md-3 de-abstracts">
-                  <font class="de-slug">{{story.key_title}}</font>
+                  <font class="de-slug">{{story.slugline}}</font>
                   <font>
                     <h3 class="de-header">{{story.headline}}</h3>
                   </font>
@@ -46,84 +45,80 @@
                     <p class="de-byline mt-3">{{story.byline}}</p>
                   </font>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
       </div>
     </div>
+    </div>
   </div>
 </template>
 <script>
+import db from "../../../firebase_config/firebaseInit";
+/* eslint-disable no-console */
 export default {
   data() {
     return {
-      // storing all the data here that going to be bind with its corresponding view
-      storys: [
-        {
-          id: 1,
-          src:
-            "https://img.zeit.de/politik/2020-03/recep-tayyip-erdogan-tuerkei-syrien-eu-fluechtlinge-wladimir-putin-bild-1/cinema__405x174__desktop",
-          key_title: "Recep Tayyip Erdoğan",
-          headline: "The Russian President can congratulate himself",
-          abstract:
-            "Turkish President Recep Tayyip Erdoğan provokes the EU with the opening of the border and bombs in Syria. Another one benefits from the escalation: Vladimir Putin.",
-          byline: "By Özlem Topçu and Michael Thumann",
-          
-        },
-        {
-          id: 2,
-          src:
-            "https://img.zeit.de/politik/ausland/2020-03/fluechtlinge-griechenland-lesbos-ausweisung-eu-migration/cinema__405x174__desktop",
-          key_title: "Refugees",
-          headline:
-            "Greece expels migrants - Turkey sends 1,000 police officers",
-          abstract:
-            "The Athens government recently sent illegally migrants back to their countries of origin. The Turkish police are strengthening their units on the Evros border river.",
-          byline: "By Özlem Topçu and Michael Thumann",
-         
-        }
-      ],
-      cardimagesrc:
-        "https://img.zeit.de/politik/ausland/2020-03/syrien-wladimir-putin-russland-baschar-al-assad/cinema__1000x428",
-      story: [
-        {
-          id: 1,
-          top_story_slugline: "Syria",
-          top_story_headline: "under our eyes",
-          top_story_abstract:
-            "Nobody can say that it is a shock that Putins military is committing war crimes. He is responsible for the crimes in Syria. And the Europeans are accomplices.",
-          top_story_byline: "A commentary by Alice Bota",
-         
-        }
-      ],
-      stories: [
-        {
-          id: 1,
-          src:
-            "https://img.zeit.de/politik/2020-03/recep-tayyip-erdogan-tuerkei-syrien-eu-fluechtlinge-wladimir-putin-bild-1/cinema__405x174__desktop",
-          slugline: "Recep Tayyip Erdoğan",
-          headline: "The Russian President can congratulate himself",
-          abstract:
-            "Turkish President Recep Tayyip Erdoğan provokes the EU with the opening of the border and bombs in Syria. Another one benefits from the escalation: Vladimir Putin.",
-          byline: "By Özlem Topçu and Michael Thumann"
-        },
-        {
-          id: 2,
-          src:
-            ".https://img.zeit.de/politik/ausland/2020-03/fluechtlinge-griechenland-lesbos-ausweisung-eu-migration/cinema__405x174__desktop",
-          slugline: "Refugees",
-          headline:
-            "Greece expels migrants - Turkey sends 1,000 police officers",
-          abstract:
-            "The Athens government recently sent illegally migrants back to their countries of origin. The Turkish police are strengthening their units on the Evros border river."
-        }
-      ]
+         filterText:'',
+      story: {},
+      user: {},
+      slugline: "",
+      headline: "",
+      body: "",
+      imageurl: "",
+      url: {},
+      audiourl: {},
+      image: {},
+      audioDataValue: {},
+
+      audioid: {},
+      videos: [],
+      imageid: {},
+      videoid: {},
+      images: [],
+      audios: [],
+      stories: [],
+      imageDataValue: []
     };
-  }
+  },
+  created() {
+    db.collection("published_stories")
+      .doc("entertainment")
+      .collection("stories")
+      .get()
+      .catch(error => console.log(error))
+      .then(querySnapshot => {
+        console.log(querySnapshot);
+        
+        querySnapshot.forEach(doc => {
+          console.log(doc.data());
+          this.stories.push(doc.data());
+        });
+      });
+  },
+   methods: {
+    edit(index) {
+      this.story = this.stories[index];
+      //  alert(this.story.headline);
+      console.log(index);
+      this.$router.push({
+        path: "/detail",
+        query: { story: this.story }
+      });
+    },
+  },
+
 };
 </script>
+<style>
+.big-img .image > img{
+width: 100%;
+}
+.big-img p{
+   display: none;
+}
 
+</style>
 <style src='../../../assets/css/featuredstory.css' scoped>
-/* import the css from asset in to this page and it works only for this page only since it is scoped */
 </style>

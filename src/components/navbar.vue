@@ -1,9 +1,12 @@
 <template>
   <div>
+    <!-- This is the navigational bar -->
     <b-navbar toggleable="md" text-variant="dark" variant="white">
           <b-navbar-toggle target="nav-collapse d-xs-inline-block d-md-none">
-        <img :src="img_src" width="220px" />
+            <!-- The log image when the device is getting larger -->
+        <img :src="img_src" width="220px" /> 
       </b-navbar-toggle>  
+      <!-- Button that will collapse when the device get smaller -->
       <b-navbar-toggle
         class="btn btn-outline-light border-0"
         style="color:white; background-color:white"
@@ -20,6 +23,7 @@
       <b-collapse id="nav-collapse" is-nav class="mt-lg-n3">
         <b-navbar-nav class="mr-auto p-0 d-none d-md-block">
           <b-navbar-brand class="navbar-brand-collapse-5 pr-5rem ml-lg-3 ml-md-3 mt-lg-3" href="#">
+            <!-- The log when the device get smaller -->
             <router-link to="/index">
             <img :src="img_src" />
             </router-link>
@@ -27,6 +31,7 @@
         </b-navbar-nav>
         <b-navbar-nav class="ml-auto mt-lg-3">
           <b-nav-form class="ml search">
+            <!-- form for input filed and search-->
             <form class="form-inline my-2 my-lg-0">
               <div class="input-group" >
                 <input type="text" class="form-control" placeholder="Search this blog"  />

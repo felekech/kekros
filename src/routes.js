@@ -1,5 +1,5 @@
 import layout from './pages/home/layout.vue'
-import detailpage from './pages/home/contents/detailpage.vue'
+import detailpage from './pages/politics/detailpage.vue'
 
 
 export const routes = [
@@ -12,6 +12,9 @@ export const routes = [
     { path: '/detail',
      component: detailpage,
       name: 'detailpage',
+      props(route) {
+        return { story : route.query.story };
+      }
 
     },
 
