@@ -1,4 +1,7 @@
-
+.top{
+  background-color: #dfdfe1;
+  font-family: "Nyala", Arial;
+}
 .decor{
   text-decoration: unset;
 }
@@ -26,8 +29,9 @@
   }
 }
   .all-text {
-    font-family: "TabletGothic", "Helvetica Neue", Helvetica, Arial, FreeSans,
-      sans-serif;
+    font-family: "Nyala", Arial;
+     /* font-family: "TabletGothic", "Helvetica Neue", Helvetica, Arial, FreeSans, */
+    
   }
   .home-card {
     margin-top: -3.5rem;
@@ -74,6 +78,9 @@
     color: brown;
   }
   @media (max-width: 540px) {
+    .story-loop{
+      margin:0.4rem
+    }
     .home-card {
       margin-left: 0.5rem;
       margin-right: 0.5rem;
@@ -91,6 +98,12 @@
       height: 1115px;
       margin-bottom: 1rem;
       background-color: #dfdfe1;
+    }
+    .co-header{
+      font-size: 1.1rem;
+    }
+    .abstract-col{
+     margin-left: -1rem; 
     }
   }
   @media (max-width: 768px) {

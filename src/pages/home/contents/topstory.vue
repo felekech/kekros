@@ -65,6 +65,7 @@ export default {
       about:'Virus',
       header:'What you should Know about the pathogen',
       link:'More about Covid19',
+
       stories: [
         {
           id: 1,
