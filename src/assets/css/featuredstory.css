@@ -1,6 +1,8 @@
 .top{
   background-color: #dfdfe1;
   font-family: "Nyala", Arial;
+  border:1px solid #dfdfe1;
+  margin-bottom: 1rem;
 }
 .decor{
   text-decoration: unset;
@@ -15,17 +17,34 @@
   border-radius: 0
 }
 @media (min-width: 1024px){
+  .co-slug{
+    margin-left: 1rem;
+  }
+  .co-header{
+    margin-left: 1rem;
+    
+  }
   .border-style{
     height: 1130px;
     margin-bottom: 1rem;
     background-color: #dfdfe1;
   }
+  .de-header{
+    margin-top: 0.5rem;
+  }
+
 }
 @media (max-width: 1000px) and  (min-width: 768px) {
   .border-style{
     height: 900px;
     margin-bottom: 1rem;
     background-color: #dfdfe1;
+  }
+  .co-slug{
+    margin-left: 1rem;
+  }
+  .co-header{
+    margin-left: 1rem;
   }
 }
   .all-text {
@@ -43,7 +62,7 @@
     color: #b91109;
   }
   .co-header {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bolder;
   }
   .co-abstract {
@@ -61,6 +80,7 @@
     font-weight: bolder;
     font-size: 1.6rem;
     color: #252525;
+    margin-top: 0.6rem;
   }
   .de-abstract {
     font-size: 1.1rem;
@@ -78,13 +98,16 @@
     color: brown;
   }
   @media (max-width: 540px) {
+    .top{
+      height: 1259px;
+    }
     .story-loop{
       margin:0.4rem
     }
     .home-card {
-      margin-left: 0.5rem;
-      margin-right: 0.5rem;
-      margin-top: -1.1rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      margin-top: -3rem;
     }
     .story {
       padding-left: 1rem;
@@ -92,6 +115,7 @@
     .de-abstracts{
       padding-left: 0.5rem;
       padding-right: 0.5rem;
+      
       /* text-align: justify; */
     }
     .border-style{
@@ -115,9 +139,10 @@
       font-size: 1rem;
     }
     .de-abstract {
-      font-size: 0.76rem;
+      font-size: 1rem;
     }
     .de-byline {
       font-size: 0.74rem;
     }
   }
+ 

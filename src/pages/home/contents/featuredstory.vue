@@ -1,6 +1,6 @@
 <template>
   <div class="top">
-    <div v-for="(story,index) in stories" :key="index">
+    <div v-for="(story,index) in stories" :key="story.id">
       <div @click="edit(index)" v-if="index==0">
         <div>
           <div class="big-img">
@@ -11,17 +11,17 @@
     </div>
     <div class="card shadow p-md-3 mb-5 mx-md-4 position-relative home-card">
       <div class="row">
-        <div class="col-lg-12" v-for="(story,index) in stories" :key="index">
-          <div v-if="index==0"  @click="edit(index)">
-            <div class="p-md-3 mb-3  position-relative">
-              <div class=" mx-md-4 story">
+        <div class="col-lg-12" v-for="(story,index) in stories" :key="story.id">
+          <div v-if="index==0" @click="edit(index)">
+            <div class="p-md-3 mb-3 position-relative">
+              <div class="mx-md-4 story mt-3">
                 <router-link to="/detail" class="decor">
-                  <font class="co-slug">{{story.slugline}}</font>
+                  <font class="co-slug ">{{story.slugline}}</font>
                   <font>
-                    <h2 class="co-header">{{story.headline}}</h2>
+                    <h2 class="co-header mt-lg-2 mt-md-2">{{story.headline}}</h2>
                   </font>
 
-                  <div class="col-xl-8 col-lg-9 abstract-col">
+                  <div class="col-xl-9 col-lg-10 col-md-10 abstract-col">
                     <font class="co-abstract">{{story.abstract}}</font>
                   </div>
                 </router-link>
@@ -30,19 +30,20 @@
           </div>
         </div>
 
-        <div class="row mt-3 mx-md-5 story-loop">
+        <div class="row  mx-md-5 story-loop">
           <div
-            class="col-lg-6 col-md-6 col-sm-12 "
+            class="col-lg-6 col-md-6 col-sm-12"
             v-for="(story,index) in stories.slice(1)"
-            :key="index" @click="edit(index)"
+            :key="story.id"
+            
           >
-            <div >
-              <div>
+            <div v-if="story.imageDataValue != null" @click="edit(index)">
+              <div v-if="story.imageDataValue.url != null">
                 <img :src="story.imageDataValue.url" alt width="100%" />
               </div>
-              <div class="mt-md-3 ">
+              <div class="mt-3">
                 <font class="de-slug">{{story.slugline}}</font>
-                <font>
+                <font >
                   <h3 class="de-header">{{story.headline}}</h3>
                 </font>
                 <font class="de-abstract">{{story.abstract}}</font>
@@ -102,7 +103,7 @@ export default {
       .finally(() => {
         this.testStory.push(this.stories[1]);
         this.testStory.push(this.stories[2]);
-        console.log("stories", this.stories[1]);
+        // console.log("stories", this.stories[1]);
       });
 
     console.log(this.testStory);
@@ -110,6 +111,7 @@ export default {
   methods: {
     edit(index) {
       this.story = this.stories[index];
+      // this.story = this.testStory[index];
       console.log(index);
       this.$router.push({
         path: "/detail",
@@ -129,6 +131,10 @@ export default {
 .big-img p {
   display: none;
 }
+.small-body p {
+  display: none;
+}
+
 </style>
 <style src='../../../assets/css/featuredstory.css' scoped>
 </style>

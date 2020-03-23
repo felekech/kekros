@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="all">
     <div>
       <app-navbar></app-navbar> 
     </div>
@@ -7,7 +7,7 @@
     <div >
  
     <div class="row">
-      <div class="col-lg-7 col-md-7 text">
+      <div class="col-lg-8 col-md-7 text">
         <font>
           <p class="key_word">{{ story.slugline}}</p>
         </font>
@@ -33,9 +33,6 @@
       <div class="col-lg-10 col-md-10 imagess " >
             <div v-html="story.body"></div>
           </div>
-      <div class="col-lg-7 col-md-10 caption">
-        <font class="">{{story.caption}}</font>
-      </div>
      
     </div>
     </div>
