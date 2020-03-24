@@ -1,12 +1,9 @@
 <template>
   <div>
-    <!-- This is the navigational bar -->
     <b-navbar toggleable="md" text-variant="dark" variant="white">
           <b-navbar-toggle target="nav-collapse d-xs-inline-block d-md-none">
-            <!-- The log image when the device is getting larger -->
         <img :src="img_src" width="220px" /> 
       </b-navbar-toggle>  
-      <!-- Button that will collapse when the device get smaller -->
       <b-navbar-toggle
         class="btn btn-outline-light border-0"
         style="color:white; background-color:white"
@@ -23,15 +20,13 @@
       <b-collapse id="nav-collapse" is-nav class="mt-lg-n3">
         <b-navbar-nav class="mr-auto p-0 d-none d-md-block">
           <b-navbar-brand class="navbar-brand-collapse-5 pr-5rem ml-lg-3 ml-md-3 mt-lg-3" href="#">
-            <!-- The log when the device get smaller -->
-            <router-link to="/index">
+            <router-link to="/">
             <img :src="img_src" />
             </router-link>
           </b-navbar-brand>       
         </b-navbar-nav>
         <b-navbar-nav class="ml-auto mt-lg-3">
           <b-nav-form class="ml search">
-            <!-- form for input filed and search-->
             <form class="form-inline my-2 my-lg-0">
               <div class="input-group" >
                 <input type="text" class="form-control" placeholder="Search this blog"  />
@@ -55,6 +50,12 @@
               <li class="pl-lg-3 pl-md-2 ">
               <a href="#">{{link}}</a>
             </li>
+            <router-link to="society">
+              <li class="pl-lg-3 pl-md-2 ">
+              <a href="#">society</a>
+            </li>
+            </router-link>
+              
             <hr class="hor-zontal" />
           </ul>
         </b-navbar-nav>

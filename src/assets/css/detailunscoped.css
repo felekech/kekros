@@ -2,6 +2,7 @@
 
 p>a{
   color: #44444c;
+  font-family: "Nyala", Arial;
   }
 
   @media (min-width: 1140px){
@@ -33,6 +34,7 @@ p>a{
   @media  (max-width: 540px){
   .headline{
     font-size: 1.38rem;
+    font-family: "Nyala", Arial;
   }
   }
   .caption {
@@ -40,5 +42,10 @@ p>a{
   }
   .imagess .image > img{
     width: 100%;
+  }
+  @media (max-width: 320px){
+  .co-header{
+    margin-right: 0.1rem;
+  }  
   }
  
