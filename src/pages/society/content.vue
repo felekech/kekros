@@ -3,30 +3,34 @@
     <div>
       <app-navbar></app-navbar>
     </div>
-    <div id="flex" v-for="news in storys" :key="news.index">
-      <div class="row title">
-        <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12 mx-md-3">
-          <font class="slugline">{{news.slugline}}</font>
-          <font>
-            <h1 class="head h1 mt-2">
-              <b>{{news.headline}}</b>
-            </h1>
-          </font>
+    <div v-for="(story,index) in stories" :key="story.id">
+      <div v-if="index==0" id="flex">
+        <div class="row title">
+          <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12 mx-md-3">
+            <font class="slugline">{{story.slugline}}</font>
+            <font>
+              <h1 class="head h1 mt-2">
+                <b>{{story.headline}}</b>
+              </h1>
+            </font>
+          </div>
+        </div>
+        <div class="mx-md-3 imgs" v-html="story.body">
+          <!-- <img :src="news.src" alt width="100%" /> -->
+        </div>
+        <div class="col-lg-9 col-md-10 abstract mx-1">
+          <font>{{story.abstract}}</font>
         </div>
       </div>
-      <div class="mx-md-3 imgs">
-        <img :src="news.src" alt width="100%" />
-      </div>
-      <div class="col-lg-9 col-md-10 abstract mx-1">
-        <font>{{news.abstract}}</font>
-      </div>
     </div>
-    <div v-for="story in news" :key="story.index">
-      <div class="row mt-5 mx-lg-5 mx-md-3 px-xl-5 txt-img">
-        <div class="col-lg-5 col-md-6 col-sm-12">
-          <div>
-            <img :src="story.src" alt width="100%" />
-          </div>
+    <div>
+      <div
+        class="row mt-5 mx-lg-5 mx-md-3 px-xl-5 txt-img"
+        v-for="(story,index) in stories.slice(1)"
+        :key="story.id"
+      >
+        <div class="col-lg-5 col-md-6 col-sm-12" @click="edit(index)">
+          <div v-html="story.body"></div>
         </div>
         <div class="col-lg-7 col-md-6 col-sm-12">
           <div class="txt">
@@ -49,52 +53,81 @@
     </div>
   </div>
 </template>
+<style >
+.imgs p {
+  display: none;
+}
+.txt-img p {
+  display: none;
+}
+.txt-img h2 {
+  display: none;
+}
+.imgs .image > img {
+  width: 100%;
+}
+.txt-img .image > img {
+  width: 100%;
+}
+</style>
 
 <script>
+import db from "../../firebase_config/firebaseInit";
+/* eslint-disable no-console */
 import navbar from "../../components/navbar";
 import footer from "../../components/footer";
 export default {
   components: {
     appNavbar: navbar,
-    appFooter: footer,
+    appFooter: footer
   },
+  
   data() {
     return {
-      storys: [
-        {
-          id: 1,
-          src:
-            "https://img.zeit.de/gesellschaft/2020-03/usa-kalifornien-waldbraende-stromversorger-fahrlaessige-toetung-schuld-bil/cinema__980x420",
-          slugline: "Forest fires",
-          headline: "Electricity supplier pleads guilty to negligent homicide",
-          abstract:
-            " The US energy provider PG&E is responsible for the forest fires in California in 2018. Broken power lines triggered the fire, 84 people died."
-        }
-      ],
-      news: [
-        {
-          id: 1,
-          src:
-            "https://img.zeit.de/gesellschaft/2020-03/germanwings-absturz-gedenken-flug-9525/wide__350x197__desktop",
-          slugline: "Lessons from the Corona Crisis",
-          headline: "We will have to reorganize the world",
-          abstract:
-            "After the Corona crisis, not everything can simply become the same as before. And until then, all we can do is exercise solidarity and treat each other with decency.",
-          byline: "By Simone Gaul"
-        },
-        {
-          id: 2,
-          src:
-            "https://img.zeit.de/gesellschaft/zeitgeschehen/2020-03/lektionen-corona-krise-globalisierung-outsourcing-5vor8-2/wide__350x197__desktop",
-          slugline: "Lessons from the Corona Crisis",
-          headline: "We will have to reorganize the world",
-          abstract:
-            "After the Corona crisis, not everything can simply become the same as before. And until then, all we can do is exercise solidarity and treat each other with decency.",
-          byline: "By Simone Gaul"
-        }
-      ]
+      story: {},
+      user: {},
+      slugline: "",
+      headline: "",
+      body: "",
+      imageurl: "",
+      url: {},
+      audiourl: {},
+      image: {},
+      audioDataValue: {},
+
+      audioid: {},
+      videos: [],
+      imageid: {},
+      videoid: {},
+      images: [],
+      audios: [],
+      stories: [],
+      imageDataValue: [],
+      testStory: []
     };
-  }
+  },
+  created() {
+    db.collection("published_stories")
+      .doc("sport")
+      .collection("stories")
+      .get()
+      .catch(error => console.log(error))
+      .then(querySnapshot => {
+        console.log(querySnapshot);
+
+        querySnapshot.forEach(doc => {
+          console.log(doc.data());
+          this.stories.push(doc.data());
+        });
+      })
+      .finally(() => {
+        this.testStory.push(this.stories[1]);
+        this.testStory.push(this.stories[2]);
+        console.log("stories", this.stories[1]);
+      });
+
+    console.log(this.testStory);
+  },
 };
 </script>
 <style src='../../assets/css/society.css' scoped>
