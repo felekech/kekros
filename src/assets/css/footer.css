@@ -1,47 +1,54 @@
 .first-row {
     background-color: #eeeef0;
     height: 170px;
-  }
-  .foo-foo {
+}
+
+.foo-foo {
     background-color: #1f1d1d;
     color: gainsboro;
     height: 250px;
     padding-top: 20px;
-  }
-  .btn {
+}
+
+.btn {
     margin-top: 20px;
     background-color: #1f1d1d;
-  }
-  .btn:hover {
+}
+
+.btn:hover {
     color: white;
-  }
-  @media (max-width: 767px) {
+}
+
+@media (max-width: 767px) {
     .footer {
-      display: none;
+        display: none;
     }
-  
-  }
-  @media (max-width: 768px){
-    .list_item{
-      font-size: 0.7rem;
-      margin-top:1rem;
-      margin-bottom: 0.7rem;
+}
+
+@media (max-width: 768px) {
+    .list_item {
+        font-size: 0.7rem;
+        margin-top: 1rem;
+        margin-bottom: 0.7rem;
     }
-    .list_items{
-      font-size: 0.7rem;
+    .list_items {
+        font-size: 0.7rem;
     }
-  }
-  @media (max-width: 767px) {
+}
+
+@media (max-width: 767px) {
     .foot2 {
-      display: block;
+        display: block;
     }
-  }
-  @media (min-width: 767px) {
+}
+
+@media (min-width: 767px) {
     .foot2 {
-      display: none;
+        display: none;
     }
-  }
-  .toper {
+}
+
+.toper {
     background-color: #eeeef0;
     height: 196px;
     width: 100%;
@@ -49,7 +56,8 @@
     padding: 0px;
     left: 0px;
     right: 0px;
-  }
-  .line {
+}
+
+.line {
     border-top: 1px solid white;
-  }
+}

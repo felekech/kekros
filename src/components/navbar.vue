@@ -47,12 +47,14 @@
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="w-100">
           <ul class="list pt-0 list2 w-100 ml-lg-n5 mt-md-n3 ml-md-n5 sos">
+             <router-link to="/politics">
               <li class="pl-lg-3 pl-md-2 ">
               <a href="#">{{link}}</a>
             </li>
+            </router-link>
             <router-link to="society">
               <li class="pl-lg-3 pl-md-2 ">
-              <a href="#">society</a>
+              <a href="#">{{links}}</a>
             </li>
             </router-link>
               
@@ -73,7 +75,8 @@ export default {
     return {
       type: "",
       img_src: require('../assets/zeit-online-logo.png'),
-      link:'Politics'
+      link:'ፖለቲካ',
+      links:'ህብረተሰብ'
 
 
     };

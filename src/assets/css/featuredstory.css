@@ -1,148 +1,161 @@
-.top{
-  background-color: #dfdfe1;
-  font-family: "Nyala", Arial;
-  border:1px solid #dfdfe1;
-  margin-bottom: 1rem;
-}
-.decor{
-  text-decoration: unset;
-}
-.co-header{
-  color: black;
-}
-.co-header:hover{
-  color: black;
-}
-.home-card {
-  border-radius: 0
-}
-@media (min-width: 1024px){
-  .co-slug{
-    margin-left: 1rem;
-  }
-  .co-header{
-    margin-left: 1rem;
-    
-  }
-  .border-style{
-    height: 1130px;
-    margin-bottom: 1rem;
+.top {
     background-color: #dfdfe1;
-  }
-  .de-header{
-    margin-top: 0.5rem;
-  }
+    border: 1px solid #dfdfe1;
+    margin-bottom: 1rem;
+}
 
+.decor {
+    text-decoration: unset;
 }
-@media (max-width: 1000px) and  (min-width: 768px) {
-  .border-style{
-    height: 900px;
-    margin-bottom: 1rem;
-    background-color: #dfdfe1;
-  }
-  .co-slug{
-    margin-left: 1rem;
-  }
-  .co-header{
-    margin-left: 1rem;
-  }
+
+.co-header {
+    color: black;
 }
-  .all-text {
+
+.co-header:hover {
+    color: black;
+}
+
+.home-card {
+    border-radius: 0
+}
+
+@media (min-width: 1024px) {
+    .co-slug {
+        margin-left: 1rem;
+    }
+    .co-header {
+        margin-left: 1rem;
+    }
+    .border-style {
+        height: 1130px;
+        margin-bottom: 1rem;
+        background-color: #dfdfe1;
+    }
+    .de-header {
+        margin-top: 0.5rem;
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 768px) {
+    .border-style {
+        height: 900px;
+        margin-bottom: 1rem;
+        background-color: #dfdfe1;
+    }
+    .co-slug {
+        margin-left: 1rem;
+    }
+    .co-header {
+        margin-left: 1rem;
+    }
+}
+
+.all-text {
     font-family: "Nyala", Arial;
-     /* font-family: "TabletGothic", "Helvetica Neue", Helvetica, Arial, FreeSans, */
-    
-  }
-  .home-card {
+    /* font-family: "TabletGothic", "Helvetica Neue", Helvetica, Arial, FreeSans, */
+}
+
+.home-card {
     margin-top: -3.5rem;
     /* border: 1px solid white; */
     border-radius: 0;
-  }
-  .co-slug {
+}
+
+.co-slug {
     font-size: 1.2rem;
     color: #b91109;
-  }
-  .co-header {
+}
+
+.co-header {
     font-size: 1.8rem;
     font-weight: bolder;
-  }
-  .co-abstract {
+}
+
+.co-abstract {
     color: #44444c;
     font-size: 1.18rem;
-  }
-  .co-byline {
+}
+
+.co-byline {
     font-size: 1.01rem;
     color: #69696c;
-  }
-  .de-slug {
+}
+
+.de-slug {
     color: #b91109;
-  }
-  .de-header {
+}
+
+.de-header {
     font-weight: bolder;
     font-size: 1.6rem;
     color: #252525;
     margin-top: 0.6rem;
-  }
-  .de-abstract {
+}
+
+.de-abstract {
     font-size: 1.1rem;
     color: #69696c;
-  }
-  .de-byline {
+}
+
+.de-byline {
     font-size: 1rem;
     color: #69696c;
-  }
-  a {
+}
+
+a {
     color: #69696c;
     font-size: 1.1rem;
-  }
-  a:hover {
+}
+
+a:hover {
     color: brown;
-  }
-  @media (max-width: 540px) {
-    .top{
-      height: 1259px;
+}
+
+@media (max-width: 540px) {
+    .top {
+        height: 1259px;
     }
-    .story-loop{
-      margin:0.4rem
+    .story-loop {
+        margin: 0.4rem
     }
     .home-card {
-      margin-left: 1rem;
-      margin-right: 1rem;
-      margin-top: -3rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: -3rem;
     }
     .story {
-      padding-left: 1rem;
+        padding-left: 1rem;
     }
-    .de-abstracts{
-      padding-left: 0.5rem;
-      padding-right: 0.5rem;
-      
-      /* text-align: justify; */
+    .de-abstracts {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        /* text-align: justify; */
     }
-    .border-style{
-      height: 1115px;
-      margin-bottom: 1rem;
-      background-color: #dfdfe1;
+    .border-style {
+        height: 1115px;
+        margin-bottom: 1rem;
+        background-color: #dfdfe1;
     }
-    .co-header{
-      font-size: 1.1rem;
+    .co-header {
+        font-size: 1.1rem;
     }
-    .abstract-col{
-     margin-left: -1rem; 
+    .abstract-col {
+        margin-left: -1rem;
     }
-  }
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .co-abstract {
-      font-size: 1rem;
+        font-size: 1rem;
     }
-  
     .de-header {
-      font-size: 1rem;
+        font-size: 1rem;
     }
     .de-abstract {
-      font-size: 1rem;
+        font-size: 1rem;
     }
     .de-byline {
-      font-size: 0.74rem;
+        font-size: 0.74rem;
     }
-  }
- 
+}
