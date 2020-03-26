@@ -18,7 +18,7 @@ export const routes = [
         component: detailpage,
         name: 'detailpage',
         props(route) {
-            return { story: route.query.story() };
+            return { story: route.query.story };
         }
 
     },
