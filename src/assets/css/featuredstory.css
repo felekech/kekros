@@ -51,20 +51,13 @@
     }
 }
 
-.all-text {
-    font-family: "Nyala", Arial;
-    /* font-family: "TabletGothic", "Helvetica Neue", Helvetica, Arial, FreeSans, */
-}
-
 .home-card {
     margin-top: -3.5rem;
-    /* border: 1px solid white; */
     border-radius: 0;
 }
 
 .co-slug {
     font-size: 1.2rem;
-    color: #b91109;
 }
 
 .co-header {
@@ -80,10 +73,6 @@
 .co-byline {
     font-size: 1.01rem;
     color: #69696c;
-}
-
-.de-slug {
-    color: #b91109;
 }
 
 .de-header {
@@ -130,7 +119,6 @@ a:hover {
     .de-abstracts {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
-        /* text-align: justify; */
     }
     .border-style {
         height: 1115px;

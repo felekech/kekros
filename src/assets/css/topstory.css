@@ -1,73 +1,80 @@
 span {
     display: flex;
     flex-direction: row;
-  }
-  span:before,span:after{
+}
+
+span:before,
+span:after {
     content: "";
     flex: 1 1;
     border-top: 0.5rem solid rgb(240, 238, 238);
-    
-  }
-  span:before {
+}
+
+span:before {
     margin-right: 10px
-  }
-  span:after {
+}
+
+span:after {
     margin-left: 10px
-  }
-  .link a {
+}
+
+.link a {
     color: black;
-  }
-  .link a:hover {
+}
+
+.link a:hover {
     color: brown;
-  }
-  .keyword {
-    color: brown;
-  }
-  .topic {
+}
+
+.topic {
     text-align: center;
-  }
-  @media (min-width: 1024px) {
+}
+
+@media (min-width: 1024px) {
     .header {
-      text-align: center;
-      font-size: 2.99rem;
+        text-align: center;
+        font-size: 2.99rem;
     }
     .headline {
-      font-size: 1.4rem;
+        font-size: 1.4rem;
     }
-  }
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .headline {
-      font-size: 1.2rem;
-      font-weight: bolder;
+        font-size: 1.2rem;
+        font-weight: bolder;
     }
     .abstract {
-      font-size: 0.8rem;
+        font-size: 0.8rem;
     }
     .byline {
-      font-size: 0.8rem;
+        font-size: 0.8rem;
     }
-  }
-  @media (max-width: 540px) {
+}
+
+@media (max-width: 540px) {
     .box {
-      margin-left: 0.5rem;
-      margin-right: 0.5rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
     }
     .story {
-      padding-left: 0.5rem;
-      padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
     }
     .byline {
-      font-size: 0.8rem;
+        font-size: 0.8rem;
     }
     .header {
-      font-size: 1.8rem;
+        font-size: 1.8rem;
     }
     .top_key {
-      font-size: 1.8rem;
+        font-size: 1.8rem;
     }
-  }
-  .box {
+}
+
+.box {
     border-left: 0.5rem solid rgb(240, 238, 238);
     border-right: 0.5rem solid rgb(240, 238, 238);
     border-bottom: 0.5rem solid rgb(240, 238, 238);
-  }
+}

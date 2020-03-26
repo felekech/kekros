@@ -52,7 +52,7 @@
               <a href="#">{{link}}</a>
             </li>
             </router-link>
-            <router-link to="society">
+            <router-link to="/society">
               <li class="pl-lg-3 pl-md-2 ">
               <a href="#">{{links}}</a>
             </li>

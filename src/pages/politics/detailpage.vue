@@ -1,15 +1,14 @@
 <template>
-  <div class="all">
+  <div>
     <div>
       <app-navbar></app-navbar> 
     </div>
 
-    <div >
- 
+    <div>
     <div class="row">
       <div class="col-lg-8 col-md-7 text">
         <font>
-          <p class="key_word">{{ story.slugline}}</p>
+          <p  id="key_word">{{ story.slugline}}</p>
         </font>
         <font>
           <h1 class="headline">
@@ -33,7 +32,6 @@
       <div class="col-lg-10 col-md-10 imagess " >
             <div v-html="story.body"></div>
           </div>
-     
     </div>
     </div>
     <div>
@@ -52,7 +50,8 @@ export default {
   },
   props:['story'],
       data(){
-        return{
+        return{      
+     
         }
       }
   

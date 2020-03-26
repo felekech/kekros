@@ -1,5 +1,4 @@
 <template>
-<!-- The second component of the home page that is topstory page with boxed border -->
   <div class="box mx-lg-5 mx-md-3">
   <span>{{boxTitle}}</span>
   <div class="row">
@@ -7,39 +6,31 @@
   <div class="topic mt-lg-5 mb-lg-5">
   <div class>
   <font>
-    <!-- key topic of that issue -->
   <p class="h1 top_key">{{about}}</p>
   </font>
   <font>
-    <!-- title or header of the boxed content -->
   <h1 class="header">{{header}}</h1>
   </font>
   </div>
   </div>
   </div>
   </div>
-  <!-- Looping story-->
   <div v-for="story in stories" :key="story.id">
   <div class="row mx-lg-5 mx-md-2 story">
   <div class="col-lg-5 col-md-6 col-sm-12 mt-5">
   <div class="card" style="width:auto">
-    <!-- image of the related story -->
   <img :src="story.img_src" alt /> 
   </div>
   </div>
   <div class="col-lg-6 col-md-6 col-sm-12 mt-5">
   <div>
-    <!-- the first title or keyword of story -->
-  <font class="keyword">{{story.keyword}}</font>
+  <font class="keyword" id="key_word">{{story.keyword}}</font>
   <font>
-     <!-- the headline of story -->
   <h2 class="headline">{{story.headline}}</h2>
   </font>
-  <!-- the abstract of story -->
   <font class="abstract">{{story.abstract}}</font>
   <br />
   <br />
-  <!-- the byline or producer of the  story -->
   <font class="byline">{{story.byline}}</font>
   </div>
   </div>
@@ -58,7 +49,6 @@
 </template>
 <script>
 export default {
-  // all the data that is binded in the view is stored in this data model
   data() {
     return {
       boxTitle:'CORONA',

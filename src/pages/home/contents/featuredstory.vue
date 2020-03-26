@@ -16,7 +16,7 @@
             <div class="p-md-3 mb-3 position-relative">
               <div class="mx-md-4 story mt-3">
                 <router-link to="/detail" class="decor">
-                  <font class="co-slug ">{{story.slugline}}</font>
+                  <font class="co-slug " id="key_word">{{story.slugline}}</font>
                   <font>
                     <h2 class="co-header mt-lg-2 mt-md-2">{{story.headline}}</h2>
                   </font>
@@ -42,7 +42,7 @@
                 <img :src="story.imageDataValue.url" alt width="100%" />
               </div>
               <div class="mt-3">
-                <font class="de-slug">{{story.slugline}}</font>
+                <font class="de-slug" id="key_word">{{story.slugline}}</font>
                 <font >
                   <h3 class="de-header">{{story.headline}}</h3>
                 </font>
@@ -111,7 +111,7 @@ export default {
   methods: {
     edit(index) {
       this.story = this.stories[index];
-      // this.story = this.testStory[index];
+      this.story = this.testStory[index];
       console.log(index);
       this.$router.push({
         path: "/detail",

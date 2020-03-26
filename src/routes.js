@@ -1,5 +1,6 @@
 import layout from './pages/home/layout.vue'
 import detailpage from './pages/politics/detailpage.vue'
+import contents from './pages/politics/contents.vue'
 import content from './pages/society/content.vue'
 
 
@@ -17,20 +18,20 @@ export const routes = [
         component: detailpage,
         name: 'detailpage',
         props(route) {
-            return { story: route.query.story };
+            return { story: route.query.story() };
         }
 
     },
     {
         path: '/society',
         component: content,
-        name: 'society',
+        name: 'content',
 
     },
     {
         path: '/politics',
-        component: content,
-        name: 'society',
+        component: contents,
+        name: 'contents',
 
     },
 
