@@ -15,6 +15,7 @@
 import navbar from "../../components/navbar";
 import footer from "../../components/footer";
 import storydesk from '../../components/storydesk'
+
 export default {
   components:{
     appStory:storydesk,

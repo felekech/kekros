@@ -1,6 +1,6 @@
 import layout from './pages/home/layout.vue'
 import detailpage from './pages/politics/detailpage.vue'
-import contents from './pages/politics/contents.vue'
+import contents from './pages/politics/index.vue'
 import content from './pages/society/content.vue'
 
 

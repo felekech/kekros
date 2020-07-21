@@ -7,9 +7,11 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import VueRouter from 'vue-router'
 import { routes } from './routes'
 import index from '../src/assets/css/index.css'
+import news from '../src/assets/css/news.css'
 
 
 Vue.use(index)
+Vue.use(news)
 Vue.use(VueRouter)
 Vue.use(BootstrapVue)
 Vue.config.productionTip = false

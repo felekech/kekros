@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div >
     <b-navbar toggleable="md" text-variant="dark" variant="white">
           <b-navbar-toggle target="nav-collapse d-xs-inline-block d-md-none">
         <img :src="img_src" width="220px" /> 

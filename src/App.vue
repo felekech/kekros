@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div >
     <div>
       <router-view />
     </div>
@@ -8,4 +8,7 @@
 <script>
 export default {};
 </script>
+<style>
+
+</style>
 

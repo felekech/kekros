@@ -1,0 +1,73 @@
+.containers{
+    font-family: "Arial";
+  }
+  .newsText{
+      color: #44444c;
+      font-size: 1.2em;
+      letter-spacing: .02em;
+      line-height: 1.4;
+      margin-bottom: 1.25rem;
+      text-align: justify;
+  }
+  .type{
+  color: #b91109;
+      display: block;
+      font-size: 1.3rem;
+      font-weight: bold;
+      letter-spacing: .02em;
+  }
+  .header{
+      color: #252525;
+      display: block;
+      letter-spacing: .02em;
+      font-size: 2.6rem;
+      font-weight: bold;
+      line-height: 1.2;
+  }
+  .title{
+      color: #44444c;
+      letter-spacing: .02em;
+      font-size: 1.5em;
+      line-height: 1.4;
+      margin-bottom: 1.25rem;
+  }
+  .contributors{
+      color: #44444c;
+      font-size: 1.5em;
+      letter-spacing: .02em;
+      line-height: 1.4;
+      margin-bottom: 1.25rem;
+  }
+  .commments{
+      color: #69696c;
+      font-size: 1.4rem;
+      letter-spacing: .03em;
+      line-height: 1.4;
+      margin-bottom: 1.25rem;
+      
+  }
+  .figureClass{
+    float:left; 
+    padding-right:20px; 
+    
+}
+@media only screen and (min-width: 500px) {
+    .figureClass{ 
+        width: 250px;
+    
+  }
+  
+  }
+
+  @media only screen and (max-width: 500px) {
+    .figureClass{ 
+       text-align: center;
+       width: 100%;
+    
+  }
+  
+  }
+  
+  .image{
+    width: 100%;
+  }
