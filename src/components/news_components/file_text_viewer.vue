@@ -2,7 +2,7 @@
   <div class="content">
     <div>
         <figure class="mr-4 pt-2 figureClass">
-            <img alt="Trulli" width="250" height="333"  :src="dataPassed.url">
+            <img alt="Trulli" class="centerImage" :src="dataPassed.url">
             <figcaption >
                <i style="opacity:0.7;">{{dataPassed.caption}}</i>
              </figcaption>
