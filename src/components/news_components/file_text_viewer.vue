@@ -2,7 +2,7 @@
   <div class="content mx-lg-2">
     <div>
         
-            <figure class="mr-lg-4 mb-md-5  pt-3 figureClass">
+            <figure class="mr-sm-4 mb-md-5  pt-3 figureClass">
                 <img alt="Image" class="centerImage d-block m-auto" :src="dataPassed.url">
                 <figcaption >
                 <i style="opacity:0.7;">{{dataPassed.caption}}</i>
