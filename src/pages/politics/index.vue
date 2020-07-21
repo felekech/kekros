@@ -11,6 +11,8 @@
             <TextViewer :dataPassed="news"  class="newsText"/>
             <FileTextViewer :dataPassed="image_text1"/>
             <FileTextViewer :dataPassed="image_text2"/>
+            <br/>
+            <br/>
         </div>
     </div>
 </template>

@@ -48,30 +48,26 @@
       
   }
   .figureClass{
-    float:left; 
-    padding-right:20px; 
+    float:left;
+
+    
     
 }
 @media only screen and (min-width: 500px) {
     .figureClass{ 
-        width: 250px;
+        width: 300px;
+        
+        
     
   }
   .centerImage{
     width:100%;
-  }
-  
-  }
-
-  @media only screen and (max-width: 500px) {
-    .figureClass{ 
-       text-align: center;
-       width: 100%;
+    
     
   }
   
   }
-  
+
   .image{
     width: 100%;
   }

@@ -1,10 +1,10 @@
 <template>
-  <div class="content">
+  <div>
     <div>
-        <figure class="mr-4 pt-2 figureClass">
-            <img alt="Trulli" class="centerImage" :src="dataPassed.url">
-            <figcaption >
-               <i style="opacity:0.7;">{{dataPassed.caption}}</i>
+        <figure class="pr-lg-3  figureClass">
+            <img alt="Image" class="centerImage d-block m-auto" :src="dataPassed.url">
+            <figcaption>
+               <i style="opacity:0.7;" >{{dataPassed.caption}}</i>
              </figcaption>
         </figure>
         <TextViewer :dataPassed="dataPassed"  class="newsText"/>
