@@ -1,7 +1,7 @@
 <template>
   <div class="content">
     <div>
-        <figure class="mr-lg-4 pt-2 figureClass">
+        <figure  class="mr-4 pt-2 figureClass">
             <img alt="Image" class="centerImage d-block m-auto" :src="dataPassed.url">
             <figcaption >
                <i style="opacity:0.7;">{{dataPassed.caption}}</i>

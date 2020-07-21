@@ -14,7 +14,7 @@
 <script>
 import navbar from "../../components/navbar";
 import footer from "../../components/footer";
-import storydesk from '../../components/storydesk'
+import storydesk from './index'
 
 export default {
   components:{

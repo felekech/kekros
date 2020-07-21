@@ -1,12 +1,17 @@
 import layout from './pages/home/layout.vue'
 import detailpage from './pages/politics/detailpage.vue'
-import contents from './pages/politics/index.vue'
+import contents from './pages/politics/contents.vue'
 import content from './pages/society/content.vue'
 
 
 
 export const routes = [
+    {
+        path: '/politics',
+        component: contents,
+        name: 'contents',
 
+    },
     {
         path: '/',
         component: layout,
@@ -28,12 +33,7 @@ export const routes = [
         name: 'content',
 
     },
-    {
-        path: '/politics',
-        component: contents,
-        name: 'contents',
 
-    },
 
 
 

@@ -1,9 +1,9 @@
 <template>
 <!-- This is a layout page for the home page here all the components that required by the home page -->
-  <div>
+  <div >
     <div>
       <!-- The navigational bar is used here at the top of the home page -->
-    <app-navbar></app-navbar>
+    <app-navbar ></app-navbar>
     </div>
     <div>
       <!-- The featured story is the top story right now in the home page lay out after the navigational bar -->
