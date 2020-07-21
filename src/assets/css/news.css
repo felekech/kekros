@@ -3,9 +3,9 @@
   }
   .newsText{
       color: #44444c;
-      font-size: 1.2em;
-      letter-spacing: .02em;
-      line-height: 1.4;
+      font-size: 1.25rem;
+      letter-spacing: .04em;
+      line-height: 1.6;
       margin-bottom: 1.25rem;
       /* text-align: justify; */
       font-family: "FranziskaWebPro",Georgia,Palatino,"Palatino Linotype",FreeSerif,serif;

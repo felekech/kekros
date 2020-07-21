@@ -1,5 +1,5 @@
 <template>
-    <div class="content">
+    <div class="content mx-lg-2">
         <figure >
             <img class="photoImage" :src="dataPassed.url" alt="Trulli" width="100%">
             <figcaption> 

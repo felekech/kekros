@@ -1,5 +1,5 @@
 <template>
-    <div class="content">
+    <div class="content mx-lg-2">
         <div class="mx-lg-5">
             <div class="mx-lg-5" v-html="dataPassed.text">
             </div>

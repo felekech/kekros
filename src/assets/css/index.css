@@ -7,24 +7,29 @@ body {
 }
 
 .container {
-    width: 100%;
+    width: 70%;
+    background-color:#41464d;
     padding: 0px;
 }
 
+
 @media (max-width: 1140px)and (min-width: 1024px) {
     .container {
-        max-width: 1140px;
+        background-color:#41464d;
+        max-width:70%;
     }
 }
 
 @media (max-width: 1024px) and (min-width: 768px) {
     .container {
-        max-width: 1024px;
+        background-color:#41464d;
+        max-width:70%;
     }
 }
 
 @media (max-width: 768px) and (min-width: 540) {
     .container {
-        max-width: 768px;
+        background-color:#41464d;
+        max-width:100%;
     }
 }
