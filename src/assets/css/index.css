@@ -6,12 +6,18 @@ body {
     color: #b91109;
 }
 
-/* .container {
+.container {
     width: 100%;
-    background-color:#41464d;
+    background-color:white;
     padding: 0px;
-} */
+}
 
+@media (max-width: 1540px)and (min-width: 1140px) {
+    .container {
+        background-color:#41464d;
+        max-width:70%;
+    }
+}
 
 @media (max-width: 1140px)and (min-width: 1024px) {
     .container {
@@ -23,7 +29,7 @@ body {
 @media (max-width: 1024px) and (min-width: 768px) {
     .container {
         background-color:#41464d;
-        max-width:70%;
+        max-width:65%;
     }
 }
 
