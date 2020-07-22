@@ -1,7 +1,9 @@
 <template>
     <div class="content mx-lg-2">
-        <div class="mx-lg-5">
-            <div class="mx-lg-5" v-html="dataPassed.text">
+        <div>
+            <div class="h4 font-weight-bold mt-lg-4" v-html="dataPassed.title">
+            </div>
+            <div v-html="dataPassed.text">
             </div>
         </div>
     </div>
