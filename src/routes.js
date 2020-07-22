@@ -5,6 +5,7 @@ import content from './pages/society/content.vue'
 
 
 
+
 export const routes = [
     {
         path: '/politics',

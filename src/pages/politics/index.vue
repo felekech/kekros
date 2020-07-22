@@ -31,19 +31,19 @@ export default {
   data() {
     return {
       type:{
-        text:"Right-wing terrorism"
+        text:"Rechtsterrorismus"
       },
       header:{
-        text:"An unflattering top spot"
+        text:"Ein unschmeichelhafter Spitzenplatz"
       },
       title:{
-        text:"Germany leads right-wing violence and right-wing terrorism in Western Europe. Not in short supply and not only recently."
+        text:"Deutschland führt bei rechter Gewalt und Rechtsterrorismus in Westeuropa. Nicht knapp und nicht erst seit Kurzem. "
       },
       contributors:{
-        text:'A guest contribution by <a href="" style="color:black;"><b>Anders Ravik Jupskås</b></a> and <a href="" style="color:black;"><b>Daniel Köhler</b></a>'
+        text:'Ein Gastbeitrag von <a href="" style="color:black;"><b>Anders Ravik Jupskås</b></a> and <a href="" style="color:black;"><b>Daniel Köhler</b></a>'
       },
       comments:{
-        text:"July 20, 2020, 1:33 p.m.   /    74 comments"
+        text:"20. Juli 2020, 13:33 Uhr    /    449 Kommentare"
       },
 
       news:{
