@@ -1,5 +1,5 @@
 <template>
-    <div class="mx-lg-5">
+    <div class="m-lg-5">
         <div class="mx-3 containers">
             <TextViewer :dataPassed="type"  class="type"/>
             <TextViewer :dataPassed="header"  class="header"/>
