@@ -1,14 +1,14 @@
 <template>
     <div>
-        <Template2/>
+        <Template1/>
     </div>
 </template>
 <script>
-import Template2 from '../../components/templates/template2.vue';
+import Template1 from '../../components/templates/template1.vue';
 
 export default {
     components: {
-      Template2
+      Template1
     
   },
   data() {
