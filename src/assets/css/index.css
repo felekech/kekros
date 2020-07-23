@@ -20,6 +20,14 @@ body {
   
 }
 
+@media (max-width: 5000px)and (min-width: 1140px) {
+    .container {
+        background-color:#41464d;
+        max-width:70%;
+    }
+  
+}
+
 @media (max-width: 1140px)and (min-width: 1024px) {
     .container {
         background-color:#41464d;
