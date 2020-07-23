@@ -17,6 +17,7 @@ body {
         background-color:#41464d;
         max-width:70%;
     }
+  
 }
 
 @media (max-width: 1140px)and (min-width: 1024px) {
@@ -24,6 +25,7 @@ body {
         background-color:#41464d;
         max-width:70%;
     }
+  
 }
 
 @media (max-width: 1024px) and (min-width: 768px) {
@@ -31,6 +33,7 @@ body {
         background-color:#41464d;
         max-width:65%;
     }
+  
 }
 
 @media (max-width: 768px) and (min-width: 540px) {
@@ -40,6 +43,8 @@ body {
     }
 
 
+}
+
 
     @media only screen and (max-width: 500px) {
         .container {
@@ -47,6 +52,50 @@ body {
             background-color:white;
         }
         
-        
+
         }
+
+
+
+@media (max-width: 1099px) and (min-width: 1px) {
+   
+    .imageContainer {
+        position: relative;
+        
+      }
+      
+      .bottom-left {
+        position: relative;
+       
+        
+      }
+      .topText{
+          color: black;
+      }
+
+      
 }
+
+@media (max-width: 5000px) and (min-width: 1100px) {
+   
+    .imageContainer {
+        position: relative;
+        
+      }
+      
+      .bottom-left {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        background-image: linear-gradient(12deg, rgba(0,0,0,0.6) 15%,rgba(0,0,0,0.15) 52%,rgba(0,0,0,0) 70%);
+        
+      }
+      .topText{
+          color: white;
+          font-weight: bold;
+          
+      }
+     
+
+      
+    }

@@ -1,14 +1,14 @@
 <template>
     <div>
-        <Template1/>
+        <FeatureTemplate/>
     </div>
 </template>
 <script>
-import Template1 from '../../components/templates/template1.vue';
+import FeatureTemplate from '../../components/templates/feature_template.vue';
 
 export default {
     components: {
-      Template1
+      FeatureTemplate
     
   },
   data() {

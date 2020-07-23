@@ -5,12 +5,12 @@
             aria-controls="collapse-4"
             class="list-group mx-lg-5 rounded-0"
             @click="visible = !visible">
-            <li class="list-group-item border-right-0 border-left-0 rounded-0">
-                <span class="font-weight-bold">{{dataPassed.title}} 
-                <i v-if="visible==true" class="fa fa-angle-up font-weight-bold" aria-hidden="true"></i>
-                <i v-else class="fa fa-angle-down font-weight-bold" aria-hidden="true"></i>
-                </span>
-                <span class="float-right">{{dataPassed.subtitle}}</span></li>
+                <li class="list-group-item border-right-0 border-left-0 rounded-0">
+                  <span class="font-weight-bold">{{dataPassed.title}} 
+                  <i v-if="visible==true" class="fa fa-angle-up font-weight-bold" aria-hidden="true"></i>
+                  <i v-else class="fa fa-angle-down font-weight-bold" aria-hidden="true"></i>
+                  </span>
+                  <span class="float-right">{{dataPassed.subtitle}}</span></li>
 
         </ul>
         <b-collapse id="collapse-4"  v-model="visible" class="mx-lg-5">
@@ -42,3 +42,5 @@
     }
   }
 </script>
+<style>
+</style>
