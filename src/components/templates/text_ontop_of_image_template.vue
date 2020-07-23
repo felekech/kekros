@@ -1,94 +1,30 @@
 <template>
-    <div>
-        
-        <ImageViewer  :dataPassed="image.image" :titles="titles"/>
-        <StoryListView :stories="stories"/>
+  <div>
+    <div @click="displaydetails(image.id)">
+      <ImageViewer :dataPassed="image.image" :titles="titles" />
     </div>
+    <StoryListView :storyLead="storyLead" />
+  </div>
 </template>
 <script>
-import StoryListView from '../page_view_component/story_list.vue';
-import ImageViewer from '../image_component/image_viewer4.vue';
+import StoryListView from "../page_view_component/story_list.vue";
+import ImageViewer from "../image_component/image_viewer4.vue";
 export default {
-    components: {
-      StoryListView,
-      ImageViewer,
-    
-    
+  components: {
+    StoryListView,
+    ImageViewer,
   },
-  data() {
-    return {
-        stories: [
-        {
-          id: 1,
-          img_src:
-            "https://img.zeit.de/politik/ausland/2020-03/afghanistan-usa-soldaten-abzug/wide__350x197__desktop",
-          keyword: "Coronavirus",
-          headline: "RKI President expects medication to be used Soon",
-          abstract:
-            "According to the Robert Koch Institute, there will soon be therapeutic agents for the sick. There is the 12th case in Berlin. Acruise ship was stopped off the US coast. The news blog",
-          byline: "By Andrea Buhtz, Karin Geil, Anne Schwedt u. a."
-        },
-        {
-          id: 2,
-          img_src:
-            "https://img.zeit.de/sport/2020-03/fussball-fans-coronavirus/wide__350x197__desktop",
-          keyword: "Gangelt",
-          headline: '"Many feel helpless and let down by politics"',
-          abstract:
-            "Nowhere in Germany are there more corona cases than in Gangelt. Family doctor Christian Hoppe fears that health care in the district will collapse.",
-          byline: "Interview: Christian Parth."
-        },
-        {
-          id: 3,
-          img_src:
-            "https://img.zeit.de/politik/ausland/2020-03/adonis-georgiadis-griechenland-asylpolitik-eu-aussengrenze-bild/wide__350x197__desktop",
-          keyword: "Adonis Georgiadis",
-          headline: '"No one will get through to Greece through Greece"',
-          abstract: "The policy of closed borders is working, says the Greek minister Adonis Georgiadis. If you have no right to asylum, you want to hold on for life.",
-          byline: " Interview: Zacharias Zacharakis ."
-        }
-      ],
-             titles:[{
-            text:"Bundeswehr",
-            type:"title",
-         
-        },
-        {
-            text:"Soldaten, die den Umsturz planen",
-            type:"header",
-         
-        },
-        {
-            text:"Aktive und ehemalige Soldaten haben in einer bisher unbekannten Chatgruppe rechtsextreme Hetze verbreitet. Mit im Chat: eine mutmaßliche Terrorunterstützerin.",
-            type:"title",
-         
-        },
-       {
-            text:"Von Christian Fuchs",
-            type:"title",
-         
-        },
-              ],
-        image:{
-            type:"image",
-            
-            image:{
-                url:"https://img.zeit.de/politik/deutschland/2020-07/bundeswehr-rechtsextremismus-chat/cinema__980x420",
-                caption:"The brother of one of those killed in Hanau laid flowers to commemorate. © Thomas Lohnes / Getty Images The brother of one of those killed in Hanau laid flowers to commemorate. © Thomas Lohnes / Getty Images",
-                caption2: "The brother of one",
-                
-            },
-           
-        },
-    };
+  props: {
+    image: Object,
+    titles: Object,
+    storyLead: Object,
   },
- 
-    methods: {
-   
-    }
-}
+  methods: {
+    displaydetails(id) {
+      this.$router.push({ name: "details", params: { id: id } });
+    },
+  },
+};
 </script>
 
-<style >
-
-</style>
+<style></style>

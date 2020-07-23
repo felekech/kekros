@@ -1,14 +1,21 @@
 <template>
   <div class=" bg-white">
     <div>
-      <router-view />
+    <app-navbar ></app-navbar>
+    <router-view />
+    <app-footer></app-footer>
+     
     </div>
   </div>
 </template>
 <script>
-export default {};
+import navbar from "./components/navbar";
+import footer from "./components/footer";
+export default {
+  components: {
+    appNavbar: navbar,
+    appFooter: footer
+  }
+};
 </script>
-<style>
-
-</style>
 

@@ -1,5 +1,5 @@
 <template>
-    <div class="content mx-lg-2">
+    <div class="content">
         <div>
             <div class="h4 font-weight-bold" v-html="dataPassed.title">
             </div>
