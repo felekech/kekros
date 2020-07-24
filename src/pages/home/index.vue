@@ -26,6 +26,16 @@ export default {
       list1: {
         storyLead: [
           {
+            id: 1,
+            img_src:
+              "https://ichef.bbci.co.uk/news/800/cpsprodpb/16BE5/production/_113575139_edhgnwfxoaec3xn.jpg",
+            keyword: "ኢትዮጵያ",
+            headline: 'በህዳሴ ግድብ ድርድር ላይ የተሰጡ አስተያየቶች',
+            abstract:
+              "ኢትዮጵያ ያላትን የውሀ ሀብት ለመጠቀም ከሁሉም የተፋሰሱ አገሮች ጋር የጋራ ስምምነት ማድረግ እንደሚገባት ምሁራን አስታወቁ፣ ታላቁ የኢትዮጵያየህዳሴ ግድብ ዛሬ የደረሰበት ደረጃ አገሪቱ በምስራቅ አፍሪቃ ያላትን ተሰሚነት እንደሚጨምረውም አመልክተዋል፡፡",
+            byline: "በ ሸዋንግዛዉ ወጋየሁ",
+          },
+          {
             id: 2,
             img_src:
               "https://kichuu.com/wp-content/uploads/2018/04/sidama-e1523019972538.jpg",
