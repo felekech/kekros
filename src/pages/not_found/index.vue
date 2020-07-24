@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mx-3">
   <img :src="url" width="100%">
   </div>
 </template>

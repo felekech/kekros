@@ -24,6 +24,7 @@ export default {
   methods: {
     displaydetails(id) {
       this.$router.push({ name: "details", params: { id: id } });
+      this.$router.go();
       document.documentElement.scrollTop = 0;
     },
   },
