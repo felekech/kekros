@@ -1,7 +1,7 @@
 <template>
     <div>
     <div class="mx-3 containers">
-    <div @click="displaydetails(image.id)">
+    <div @click="displaydetails(image.id)" id="cursor">
       <div v-for="(dataValue, index1) in titles" :key="index1">
         <TextViewer :dataPassed="dataValue" :class="dataValue.type" />
       </div>

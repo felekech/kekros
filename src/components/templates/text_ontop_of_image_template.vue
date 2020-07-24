@@ -1,7 +1,7 @@
 <template>
     <div>
     <div class="mx-3 containers">
-    <div @click="displaydetails(image.id)">
+    <div @click="displaydetails(image.id)" id="cursor">
       <ImageViewer :dataPassed="image.image" :titles="titles" />
     </div>
     <StoryListView :storyLead="storyLead" />

@@ -1,7 +1,7 @@
 <template>
   <div class="mx-lg-5">
     <div v-for="story in storyLead" :key="story.id">
-      <div class="row story" @click="displaydetails(storyLead.id)">
+      <div class="row story" @click="displaydetails(storyLead.id)" id="cursor">
         <div class="col-lg-5 col-md-6 mt-2">
           <div>
             <img class="photoImage" :src="story.img_src" alt="Image File not found" width="100%">
