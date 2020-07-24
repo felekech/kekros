@@ -1,13 +1,13 @@
 <template>
   <div class="mx-lg-5">
     <div v-for="story in storyLead" :key="story.id">
-      <div class="row mx-lg-5 mx-md-2 story" @click="displaydetails(storyLead.id)">
-        <div class="col-lg-5 col-md-6 col-sm-12 mt-5">
-          <div class="card" style="width:auto">
-            <img :src="story.img_src" alt />
+      <div class="row story" @click="displaydetails(storyLead.id)">
+        <div class="col-lg-5 col-md-6 mt-5">
+          <div>
+            <img class="photoImage" :src="story.img_src" alt="Trulli" width="100%">
           </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 mt-5">
+        <div class="col-lg-6 col-md-5 mt-5">
           <div>
             <font class="keyword" id="key_word">{{ story.keyword }}</font>
             <font>
@@ -18,6 +18,8 @@
             <br />
             <font class="byline">{{ story.byline }}</font>
           </div>
+        </div>
+        <div class="col-1">
         </div>
       </div>
     </div>

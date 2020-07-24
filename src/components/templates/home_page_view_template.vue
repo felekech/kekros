@@ -1,12 +1,14 @@
 <template>
-  <div>
+    <div>
+    <div class="mx-3 containers">
     <div @click="displaydetails(image.id)">
       <div v-for="(dataValue, index1) in titles" :key="index1">
         <TextViewer :dataPassed="dataValue" :class="dataValue.type" />
       </div>
-      <ImageViewer :dataPassed="image.image" :class="'mx-lg-5'" />
+      <ImageViewer :dataPassed="image.image" />
     </div>
     <StoryListView :storyLead="storyLead" />
+  </div>
   </div>
 </template>
 <script>

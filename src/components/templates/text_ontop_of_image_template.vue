@@ -1,9 +1,11 @@
 <template>
-  <div>
+    <div>
+    <div class="mx-3 containers">
     <div @click="displaydetails(image.id)">
       <ImageViewer :dataPassed="image.image" :titles="titles" />
     </div>
     <StoryListView :storyLead="storyLead" />
+  </div>
   </div>
 </template>
 <script>

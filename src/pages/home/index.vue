@@ -13,12 +13,13 @@
   </div>
 </template>
 <script>
-import HomaPageList2 from "../../components/templates/home_page_view_template.vue";
 import HomaPageList1 from "../../components/templates/text_ontop_of_image_template.vue";
+import HomaPageList2 from "../../components/templates/home_page_view_template.vue";
 export default {
   components: {
-    HomaPageList2: HomaPageList2,
     HomaPageList1: HomaPageList1,
+    HomaPageList2: HomaPageList2,
+    
   },
   data() {
     return {
