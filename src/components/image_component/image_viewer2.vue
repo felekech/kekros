@@ -1,7 +1,7 @@
 <template>
     <div class="content mx-lg-2">
         <figure class="mx-lg-5">
-            <img class="photoImage mx-lg-5" :src="dataPassed.url" alt="Trulli" width="90%">
+            <img class="photoImage mx-lg-5" :src="dataPassed.url" alt="Image File not found" width="90%">
             <figcaption> 
                 <div >
                     <div class="mx-lg-5" v-html="dataPassed.caption">

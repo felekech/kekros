@@ -2,7 +2,7 @@
 
     <div class="imageContainer" >
             
-            <img class="photoImage" :src="dataPassed.url" alt="Trulli" width="100%">
+            <img class="photoImage" :src="dataPassed.url" alt="Image File not found" width="100%">
             <div class="row mx-2">
             <div class="bottom-left col-lg-7">
 

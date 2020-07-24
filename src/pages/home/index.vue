@@ -28,31 +28,31 @@ export default {
           {
             id: 2,
             img_src:
-              "https://img.zeit.de/sport/2020-03/fussball-fans-coronavirus/wide__350x197__desktop",
-            keyword: "Gangelt",
-            headline: '"Many feel helpless and let down by politics"',
+              "https://kichuu.com/wp-content/uploads/2018/04/sidama-e1523019972538.jpg",
+            keyword: "ኢትዮጵያ",
+            headline: 'በኮንሶ ግጭት ከ10 በላይ ሰዎች መገደላቸውን የዐይን እማኝና ባለስልጣን ተናገሩ',
             abstract:
-              "Nowhere in Germany are there more corona cases than in Gangelt. Family doctor Christian Hoppe fears that health care in the district will collapse.",
-            byline: "Interview: Christian Parth.",
+              "በደቡብ ክልል በኮንሶ ዞን እና በአሌ ልዩ ወረዳ አዋሳኝ ቀበሌዎች ካለፈው እሁድ ጀምሮ በተቀሰቀሰ ግጭት 13 ሰዎች መገደላቸውን፤በርካታ ሰዎች መቁሰላቸውን የአካባቢው ነዋሪ ለዶይቼ ቬለ ተናግረዋል። የኮሮሶ ዞን ሰላም እና ጸጥታ ጽህፈት ቤት ኃላፊ ግጭቱ መበርታቱን አረጋግጠው 11 ሰዎች ለመሞታቸው መረጃ እንዳላቸው ለዶይቼ ቬለ አስረድተዋል።",
+            byline: "በ ሸዋንግዛዉ ወጋየሁ",
           },
         ],
         titles: [
           {
-            text: "Bundeswehr",
+            text: "ኢትዮጵያ",
             type: "title",
           },
           {
-            text: "Soldaten, die den Umsturz planen",
+            text: "የኢትዮጵያ ሞባይል ዳታ ሥራ ጀመረ",
             type: "header",
           },
           {
             text:
-              "Aktive und ehemalige Soldaten haben in einer bisher unbekannten Chatgruppe rechtsextreme Hetze verbreitet. Mit im Chat: eine mutmaßliche Terrorunterstützerin.",
+              "በኢትዮጵያ ለ23 ቀናት ተቋርጦ የቆየው የሞባይል ኢንተርኔት አገልግሎት ዛሬ ወደ ሥራ ተመልሷል። እንደ ሌሎች የኢንተርኔት አገልግሎቶች ሁሉ የኢትዮ ቴሌኮም ደንበኞች በተንቀሳቃሽ ስልኮቻቸው የሚያገኙት ይኸው ግልጋሎት የተቋረጠው ድምጻዊ ሐጫሉ ሁንዴሳ በተገደለ በማግሥቱ ሰኔ 23 ቀን 2012 ዓ.ም. ነበር።",
             type: "title",
           },
           {
-            text: "Von Christian Fuchs",
-            type: "title",
+            text: "በ ዮሐንስ ገብረእግዚዓብሔር",
+            type: "contributors",
           },
         ],
         image: {
@@ -60,10 +60,10 @@ export default {
 
           image: {
             url:
-              "https://img.zeit.de/politik/deutschland/2020-07/bundeswehr-rechtsextremismus-chat/cinema__980x420",
+              "https://www.ifc.org/wps/wcm/connect/74cb0010-aa6a-4b36-8968-daafd91a5d53/gebeya-it-training-ethiopia-story-main-banner1-1920x960.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE-74cb0010-aa6a-4b36-8968-daafd91a5d53-n6Ce12l",
             caption:
-              "The brother of one of those killed in Hanau laid flowers to commemorate. © Thomas Lohnes / Getty Images The brother of one of those killed in Hanau laid flowers to commemorate. © Thomas Lohnes / Getty Images",
-            caption2: "The brother of one",
+              "በኢትዮጵያ ለ23 ቀናት ተቋርጦ የቆየው የሞባይል ኢንተርኔት አገልግሎት",
+            caption2: "የኢትዮጵያ ሞባይል ዳታ",
           },
         },
       },
@@ -72,21 +72,31 @@ export default {
           {
             id: 1,
             img_src:
-              "https://img.zeit.de/politik/ausland/2020-03/afghanistan-usa-soldaten-abzug/wide__350x197__desktop",
-            keyword: "Coronavirus",
-            headline: "RKI President expects medication to be used Soon",
+              "https://cdnuploads.aa.com.tr/uploads/Contents/2020/04/02/thumbs_b_c_d8c510086be51d3df80ec5f25335926e.jpg?v=173814",
+            keyword: "አፍሪቃ",
+            headline: "የኮቪድ 19 ወረርሽኝ በአፍሪቃ",
             abstract:
-              "According to the Robert Koch Institute, there will soon be therapeutic agents for the sick. There is the 12th case in Berlin. Acruise ship was stopped off the US coast. The news blog",
-            byline: "By Andrea Buhtz, Karin Geil, Anne Schwedt u. a.",
+              "ደቡብ አፍሪቃ ውስጥ በኮቪድ 19 የሚያዘው ሰው ቁጥር በፍጥነት እየጨመረ ነው። በየቀኑም ከ10,000 የሚበልጡ በተሐዋሲው የተያዙ ሰዎች መገኘታቸው መመዝገቡ በአፍሪቃ አኅጉር ግንባር ቀደም አድርጓታል። የዓለም የጤና ድርጅትም የደቡብ አፍሪቃ ይዞታ ወረርሽኙ በመላው የአፍሪቃ አኅጉር ሊስፋፋ የመቻሉ ማመላከቻ እንደሆነ አሳስቧል።",
+            byline: "በ ሸዋዬ ለገሠ/ያና ጌንዝ",
+          },
+          {
+            id: 2,
+            img_src:
+              "https://africanews.space/wp-content/uploads/2019/07/Sudan-National-Space-Programme.png",
+            keyword: "አፍሪቃ",
+            headline: "አዲሱ የሱዳን የህግ ማሻሻያና የቲምቡክቱ የጦር ወንጀል ክስ",
+            abstract:
+              "ለሶስት አስርተ አመታት ሱዳንን ያስተዳደሩት ኦማር አልበሽር በጎርጎሮሳዊው ሚያዚያ 2019ዓ/ም  በህዝባዊ አመፅ ከስልጣን ከተወገዱ ወዲህ ሰሞኑን በሀገሪቱ   የተደረገው የህግ ማሻሻያ እንደ ሁለተኛ አብዮት የሚቆጥሩት ብዙዎች ናቸው።ሀገሪቱን የሚያስተዳድረው የሱዳን ሉአላዊ ምክር ቤት ያፀደቀው የህግ ማሻሻያ የሴት ልጅ ግርዛትን የሚከለክል ነው።",
+            byline: "በ ሸዋዬ ለገሠ/ያና ጌንዝ",
           },
         ],
         titles: [
           {
-            text: "Rechtsterrorismus",
+            text: "አፍሪቃ",
             type: "type",
           },
           {
-            text: "Ein unschmeichelhafter Spitzenplatz",
+            text: "የኦማር ኧል-በሽር የፍርድ ቤት ዉሎ",
             type: "header",
           },
         ],
@@ -95,10 +105,10 @@ export default {
 
           image: {
             url:
-              "https://img.zeit.de/wirtschaft/2020-07/fleischbetrieb-toennies-coronavirus-infektionsfaelle-fleischpreis-bild/cinema__1000x428",
+              "https://www.dw.com/image/50078530_303.jpg",
             caption:
-              "The brother of one of those killed in Hanau laid flowers to commemorate. © Thomas Lohnes / Getty Images The brother of one of those killed in Hanau laid flowers to commemorate. © Thomas Lohnes / Getty Images",
-            caption2: "The brother of one",
+              "የቀድሞው የሱዳን ፕሬዝዳንት ኦማር ኧል-በሽር የዛሬ የፍርድ ቤት ዉሎ",
+            caption2: "የፍርድ ቤት ዉሎ",
           },
         },
       },

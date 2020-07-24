@@ -1,5 +1,5 @@
 .containers{
-    font-family: "Arial";
+    font-family: "Nyala",
   }
   .newsText{
       color: #44444c;
@@ -7,8 +7,9 @@
       letter-spacing: .02em;
       line-height: 1.6;
       margin-bottom: 1.25rem;
+      font-family: "Nyala";
       /* text-align: justify; */
-      font-family: "FranziskaWebPro",Georgia,Palatino,"Palatino Linotype",FreeSerif,serif;
+      /* font-family: "FranziskaWebPro",Georgia,Palatino,"Palatino Linotype",FreeSerif,serif; */
   }
   .type{
   color: #b91109;

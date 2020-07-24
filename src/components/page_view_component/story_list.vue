@@ -2,12 +2,12 @@
   <div class="mx-lg-5">
     <div v-for="story in storyLead" :key="story.id">
       <div class="row story" @click="displaydetails(storyLead.id)">
-        <div class="col-lg-5 col-md-6 mt-5">
+        <div class="col-lg-5 col-md-6 mt-2">
           <div>
-            <img class="photoImage" :src="story.img_src" alt="Trulli" width="100%">
+            <img class="photoImage" :src="story.img_src" alt="Image File not found" width="100%">
           </div>
         </div>
-        <div class="col-lg-6 col-md-5 mt-5">
+        <div class="col-lg-6 col-md-5 mt-2">
           <div>
             <font class="keyword" id="key_word">{{ story.keyword }}</font>
             <font>

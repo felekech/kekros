@@ -52,6 +52,7 @@
         :btnClickChange="this.changeSelection"
         :currentDataPassed="current"
         :dataPassed="storyData.data.articles"
+        :tableContent="storyData.tableContent"
       />
     </div>
   </div>
