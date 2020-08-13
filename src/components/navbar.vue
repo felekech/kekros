@@ -1,12 +1,11 @@
 <template>
-  <div>
+  <div class="mx-lg-5">
     <b-navbar toggleable="lg">
       <b-navbar-brand href="/">
         <img :src="img_src" width="100%" />
       </b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
     </b-navbar>
-
     <b-navbar toggleable="lg">
       <b-collapse id="nav-collapse" is-nav class="horizontalLine">
         <b-navbar-nav v-for="(link, index) in links" :key="index">
@@ -34,14 +33,9 @@ export default {
       // img_src: require("../assets/zeit-online-logo.png"),
 
       links: [
-        { title: "ፖለቲካ", link: "/politics" },
-        { title: "ህብረተሰብ", link: "/society" },
-        { title: "ስፖርት", link: "/sport" },
-        { title: "ጤና", link: "/health" },
-        { title: "ኢኮኖሚ", link: "/economy" },
-        { title: "ቴክኖሎጂ", link: "/technology" },
-        { title: "ጠፈር", link: "/space" },
-        { title: "ግብርና", link: "/agriculture" },
+        { title: "Home", link: "/" },
+        { title: "Contact", link: "/contact" },
+        { title: "About", link: "/about" },
       ],
     };
   },
