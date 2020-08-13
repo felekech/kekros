@@ -36,6 +36,7 @@
             placeholder="Enter message"
           ></b-form-textarea>
         </b-form-group>
+        
         <b-button class="mr-3 my-3" type="submit" variant="primary"
           >Submit</b-button
         >
